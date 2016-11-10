@@ -1,0 +1,50 @@
+@import "../../../variables.style";
+@import "../../../mixins.style";
+
+:host {
+  display: inline-block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    width: 30%;
+    font-size: 36px;
+    font-weight: bold;
+    color: #6a205f;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.4);
+
+    &:nth-child(2) {
+      width: 20%;
+    }
+  }
+  td {
+    text-align: center;
+    font-size: 48px;
+    color: #8d93a0;
+    text-transform: uppercase;
+
+    &:first-child, &:last-child {
+      font-size: 64px;
+      font-weight: bold;
+      color: #353535;
+    }
+  }
+  tr {
+    height: 100px;
+
+    &:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+    &:nth-child(odd) {
+      background-color: rgba(141, 147, 160, 0.05);
+    }
+  }
+
+}
+
+
+

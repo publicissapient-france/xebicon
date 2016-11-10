@@ -1,0 +1,29 @@
+$backgroundColor: rgb(232, 233, 236);
+$font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
+$color-purple: #6a205f;
+$color-train-1: $color-purple;
+$color-tangerine: #f59300;
+$color-train-2: $color-tangerine;
+$color-shadow: rgba(0,0,0,0.20);
+$color-grey-text: #8d93a0;
+$color-black: #353535;
+
+
+&.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+@mixin train-icon($radius) {
+  display: inline-block;
+  width: $radius;
+  height: $radius;
+  border-radius: $radius/2;
+  background: grey url(../assets/svg/train.svg) no-repeat center;
+  background-size: 64% 64%;
+}

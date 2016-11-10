@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  TrainSubscription
+
+  Created by Jeromin Lebon on 31/10/2016.
+  Copyright © 2016 Xebia. All rights reserved.
+*/
+
+"OBSTACLE_BLOCKED_TRUE"="La signalisation nous oblige un arrêt.";
+"OBSTACLE_BLOCKED_FALSE"="Ralentissons pour éviter l'obstacle !";
+"XEBICON_DATE"="9 novembre 2016 - Paris, France";

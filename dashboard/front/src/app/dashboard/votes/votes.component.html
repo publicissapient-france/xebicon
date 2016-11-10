@@ -1,0 +1,26 @@
+<div class="voting">
+  <div class="vertical-separation"></div>
+  <div class="trains-icons">
+    <train-icon></train-icon>
+    <train-icon></train-icon>
+  </div>
+  <votes-distribution class="clearfix" [data]="distribution$ | async | toJS" [showResults]="showResults"></votes-distribution>
+  <div class="frequency" *ngIf="!showResults">
+    <votes-frequency [data]="votesVolatileLeft" (voteExpired)="onVoteExpired($event, 1)"></votes-frequency>
+    <votes-frequency [data]="votesVolatileRight" (voteExpired)="onVoteExpired($event, 2)"></votes-frequency>
+  </div>
+  <div class="message">
+    <div *ngIf="!showResults" class="message-vote">
+      <div><span class="fb-icon"></span> <div>http://goo.gl/RPKKF4</div></div>
+      <div><span class="xebicon-icon"></span> <div>iOS & Android</div></div>
+    </div>
+
+    <div class="message-winner">
+      <vote-counter *ngIf="showResults" [data]="voteCounter$ | async | toJS"></vote-counter>
+      <span *ngIf="showResults">C'est le train <train [trainId]="winnerTrainId"></train> qui sera le plus rempli !</span>
+    </div>
+  </div>
+  <div class="timer" *ngIf="!showResults">
+    <div><vote-timer [voteDuration]="voteDuration$ | async"></vote-timer></div>
+  </div>
+</div>

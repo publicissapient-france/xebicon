@@ -1,0 +1,19 @@
+<table>
+  <tbody>
+  <tr>
+    <td>Destination</td>
+    <td>XebiCon</td>
+  </tr>
+  <tr>
+    <td>Via</td>
+    <td>
+      <span *ngIf="trainId == 1">Bordeaux</span>
+      <span *ngIf="trainId == 2">Lyon</span>
+    </td>
+  </tr>
+  <tr>
+    <td>Nombre de passagers</td>
+    <td>{{ count }}</td>
+  </tr>
+  </tbody>
+</table>

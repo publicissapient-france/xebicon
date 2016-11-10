@@ -1,0 +1,8 @@
+ML/
+tracker/*.pyc
+tests/__pycache__
+tests/.cache
+tests/result*.jpg
+tests/result*.png
+resources/*.mp4
+resources/*.mov

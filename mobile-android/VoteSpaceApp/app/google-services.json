@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "532566746540",
+    "firebase_url": "https://votespace-2e76d.firebaseio.com",
+    "project_id": "votespace-2e76d",
+    "storage_bucket": "votespace-2e76d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532566746540:android:786e2a0f543c87c8",
+        "android_client_info": {
+          "package_name": "fr.xebia.votespaceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532566746540-j2iebquq60b74i56d36coa2i599olbj5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8xZGpPtDltL19nZmY8lTRnEPhq9XX3LM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532566746540:android:5bf4f8e53b996b7f",
+        "android_client_info": {
+          "package_name": "fr.xebia.xebicon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532566746540-j2iebquq60b74i56d36coa2i599olbj5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8xZGpPtDltL19nZmY8lTRnEPhq9XX3LM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

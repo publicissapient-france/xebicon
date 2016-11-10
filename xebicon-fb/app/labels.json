@@ -1,0 +1,73 @@
+{
+  "stations": [
+    {
+      "id": 1,
+      "name": "Bordeaux",
+      "image": "https://s3-eu-west-1.amazonaws.com/xebicon-images/bdx-departure.jpg",
+      "boardingText": "OK, bien reçu, vous êtes passager du train Violet qui visite Bordeaux.",
+      "departureStartText": {
+        "1": "Départ imminent ! Veuillez garder bras et jambes à l'intérieur du wagon.",
+        "2": "Bon voyage."
+      },
+      "descriptionText": {
+        "1": "Bienvenue dans le train pour Bordeaux. Nous vous souhaitons un agréable voyage."
+      },
+      "departureEndText": {
+        "1": ""
+      },
+      "positionText": {
+        "1": "Bienvenue à Bordeaux, la capitale mondiale du vin.",
+        "4": "Arrivée à la XebiCon : bienvenue."
+      },
+      "highAvailabilityStartText": "Le wagon bar est ouvert. Venez déguster nos grands crus classés. L'abus d'alcool est dangereux pour la santé, à consommer avec modération. Faites votre choix !",
+      "highAvailabilityStopText": "La dégustation est terminée, préparez-vous au départ."
+    },
+    {
+      "id": 2,
+      "name": "Lyon",
+      "image": "https://s3-eu-west-1.amazonaws.com/xebicon-images/lyon-departure.jpg",
+      "boardingText": "OK, bien reçu, vous êtes passager du train Orange qui visite Lyon.",
+      "hotDeployStartText": "Nous avons détecté une anomalie dans le logiciel de gestion des lampadaires, nos ingénieurs lancent la précédure de récupération.",
+      "hotDeployStopText": "Incidents lampadaires résolus. Préparez-vous au départ.",
+      "departureStartText": {
+        "1": "Départ imminent ! Veuillez garder bras et jambes à l'intérieur du wagon.",
+        "2": "Bon voyage."
+      },
+      "descriptionText": {
+        "1": "Bienvenue dans le train pour Lyon. Nous vous souhaitons un agréable voyage."
+      },
+      "departureEndText": {
+        "1": ""
+      },
+      "positionText": {
+        "2": "Bienvenue à Lyon ville des lumières !",
+        "3": "Arrivée à la XebiCon : bienvenue."
+      }
+    }
+  ],
+  "obstacleCleared": "L'obstacle a été dégagé, reprise du traffic.",
+  "animal": {
+    "obstacle-true": "Perturbation détectée sur les voies. La signalisation nous oblige un arrêt.",
+    "obstacle-false": "Perturbation détectée sur les voies. La signalisation nous oblige à adapter notre vitesse.",
+    "COW": {
+      "name": "vache",
+      "image": "https://s3-eu-west-1.amazonaws.com/xebicon-images/cow.png"
+    },
+    "RABBIT": {
+      "name": "lapin",
+      "image": "https://s3-eu-west-1.amazonaws.com/xebicon-images/rabbit.png"
+    },
+    "CHICKEN": {
+      "name": "poulet",
+      "image": "https://s3-eu-west-1.amazonaws.com/xebicon-images/chicken.png"
+    },
+    "HORSE": {
+      "name": "cheval",
+      "image": "https://s3-eu-west-1.amazonaws.com/xebicon-images/horse.png"
+    },
+    "PIG": {
+      "name": "cochon",
+      "image": "https://s3-eu-west-1.amazonaws.com/xebicon-images/pig.png"
+    }
+  }
+}

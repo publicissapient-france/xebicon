@@ -1,0 +1,49 @@
+@import "../../../variables.style";
+
+:host {
+  display: block;
+  text-align: center;
+}
+
+h1 {
+  display: flex;
+  padding: 0 40px 0 60px;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06), 0 8px 8px 0 rgba(0, 0, 0, 0.12);
+  margin: 0;
+  height: 160px;
+
+  font-family: $font-family;
+
+  > div {
+    height: 83%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:first-child {
+      font-size: 72px;
+      color: $color-tangerine;
+      font-weight: bold;
+    }
+    &:last-child {
+      span {
+        font-size: 40px;
+        color: $color-grey-text;
+        font-weight: normal;
+      }
+      img {
+        &.ios-app {
+          margin-left: 60px;
+          height: 60px;
+        }
+        &.android-app {
+          margin-left: 40px;
+          height: 89px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<resources>
+    <color name="xebia_color">#ff6a205f</color>
+    <color name="xebia_menu_color">#ff551150</color>
+
+    <color name="default_theme_primary">#ff6a205f</color>
+    <color name="default_theme_primary_dark">#ff4A1642</color>
+    <color name="default_theme_primary_light">#fff69538</color>
+
+    <color name="track_agile">#ffafb6bb</color>
+    <color name="track_data">#ffde6b00</color>
+    <color name="track_future">#ffc27fda</color>
+    <color name="track_java">#ffde1928</color>
+    <color name="track_language">#ff1c9170</color>
+    <color name="track_mobile">#ff2a83d9</color>
+    <color name="track_startup">#ffedbb00</color>
+    <color name="track_web">#ff27384d</color>
+    <color name="schedule_header_bg">#fff3f3f3</color>
+    <color name="text_view_selector">#ffe9e9e9</color>
+    <color name="questions_status_bar">#ff214a66</color>
+
+    <color name="body_text_1">#de000000</color>
+    <color name="body_text_2">#8a000000</color>
+    <color name="body_text_3">#60000000</color>
+    <color name="body_text_disabled">#44000000</color>
+
+    <color name="default_session_color">?attr/colorPrimary</color>
+
+    <color name="body_text_1_inverse">#deffffff</color>
+    <color name="body_text_2_inverse">#8affffff</color>
+
+    <color name="list_dropdown_foreground_normal">#ff333333</color>
+    <color name="list_dropdown_divider_color">#92a3a3a3</color>
+
+    <color name="my_schedule_conflict">#db4437</color>
+    <color name="divider_gray">#ffc7c7c7</color>
+    <color name="theme_accent_1">#00b0ff</color>
+</resources>

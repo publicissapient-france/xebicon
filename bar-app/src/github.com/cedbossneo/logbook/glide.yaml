@@ -1,0 +1,8 @@
+package: .
+import:
+- package: github.com/gin-gonic/gin
+  version: master
+- package: gopkg.in/dancannon/gorethink.v2
+  version: v2.1.2
+- package: github.com/streadway/amqp
+  version: master

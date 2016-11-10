@@ -1,0 +1,20 @@
+.passenger-list-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 100%;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.passenger-row {
+  display: flex;
+  width: 100%;
+}
+
+.passenger-item-container {
+  display: flex;
+  &:not(:first-of-type) {
+    margin-left: 72px;
+    margin-bottom: 58px;
+  }
+}

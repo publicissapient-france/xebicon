@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBdx">#6a205f</color>
+    <color name="colorLyon">#f59300</color>
+    <color name="bgGray">#E8E9EC</color>
+    <color name="promptGray">#8D93A0</color>
+
+    <color name="default_theme_primary">#ff6a205f</color>
+    <color name="default_theme_primary_dark">#ff4A1642</color>
+    <color name="default_theme_primary_light">#fff69538</color>
+</resources>

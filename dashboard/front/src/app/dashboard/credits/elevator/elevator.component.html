@@ -1,0 +1,12 @@
+<div class="elevator" [ngClass]="{'develop': develop, 'end'  : end}">
+    <div class="elevator-cab" [ngClass]="{'move' : state && !develop}" *ngIf="credit">
+        <element *ngFor="let element of credit.elements"
+                 [data]="element"
+                 [resources]="credit.resources">
+        </element>
+
+        <div class="thankyou">
+            Merci à tous !
+        </div>
+    </div>
+</div>

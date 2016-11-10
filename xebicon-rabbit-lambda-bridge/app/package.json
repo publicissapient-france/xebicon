@@ -1,0 +1,13 @@
+{
+  "name": "xebicon-rabbit-lambda-bridge",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "unirest": "^0.5",
+    "winston": "^2.2.0",
+    "amqplib": "^0.4.2"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  }
+}
+

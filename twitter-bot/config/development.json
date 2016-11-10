@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "threshold": "debug",
+    "console": {
+      "level": "debug"
+    }
+  },
+  "rabbitMQ": {
+    "host": "host",
+    "user": "user",
+    "password": "password",
+    "queue": "twitter_consumer",
+    "exchangeConsumer": "xebiconExchange",
+    "exchangeProducer": "xebiconExchange"
+  },
+  "twitterBot": {
+    "sender": "XebiconTest"
+  }
+}

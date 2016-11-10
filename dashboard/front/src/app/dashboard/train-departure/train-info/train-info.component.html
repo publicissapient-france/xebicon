@@ -1,0 +1,28 @@
+<table>
+  <tbody>
+  <tr>
+    <td>Destination</td>
+    <td>XebiCon</td>
+  </tr>
+  <tr>
+    <td>Via</td>
+    <td>
+      <span *ngIf="trainId == 1">Bordeaux</span>
+      <span *ngIf="trainId == 2">Lyon</span>
+    </td>
+  </tr>
+  <tr>
+    <td>Nombre de passagers</td>
+    <td>{{ count }}</td>
+  </tr>
+  <tr>
+    <td>Services à bord</td>
+    <td>
+      <img src="../../../../assets/svg/service-restaurant.svg" alt=""/>
+      <img src="../../../../assets/svg/service-bar.svg" alt=""/>
+      <img src="../../../../assets/svg/service-baggage.svg" alt=""/>
+      <img src="../../../../assets/svg/service-disabled.svg" alt=""/>
+    </td>
+  </tr>
+  </tbody>
+</table>

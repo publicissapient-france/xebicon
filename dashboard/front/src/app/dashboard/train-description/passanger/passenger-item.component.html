@@ -1,0 +1,10 @@
+<div
+  *ngIf="!hasAvatar()"
+  class="passenger faded-{{fade}} {{passenger.media}}"
+>
+</div>
+<div
+  *ngIf="hasAvatar()"
+  class="passenger faded-{{fade}} AVATAR"
+  [style.background-image]="getAvatar()">
+</div>

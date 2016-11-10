@@ -1,0 +1,16 @@
+{
+  "train": [
+    {"id": 1, "position": "head", "rfid": "8EF44277"},
+    {"id": 1, "position": "tail", "rfid": "1EC64277"},
+    {"id": 2, "position": "head", "rfid": "5E834E77"},
+    {"id": 2, "position": "tail", "rfid": "0EED4277"}
+  ],
+  "segment": [
+    {"id": 1, "mac": "B8:27:EB:43:B5:A5"},
+    {"id": 2, "mac": "B8:27:EB:C1:91:80"},
+    {"id": 3, "mac": "B8:27:EB:76:C9:69"},
+    {"id": 4, "mac": "B8:27:EB:BE:6D:59"},
+    {"id": 5, "mac": "B8:27:EB:50:21:5E"},
+    {"id": 6, "mac": "B8:27:EB:A7:A5:CA"}
+  ]
+}

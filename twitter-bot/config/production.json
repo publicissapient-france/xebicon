@@ -1,0 +1,27 @@
+{
+  "logger": {
+    "threshold": "info",
+    "console": {
+      "level": "info"
+    }
+  },
+  "twitterBot": {
+    "sender": "XebiconTest",
+    "consumerKey": "xx",
+    "consumerSecret": "xx",
+    "accessToken": "xx",
+    "accessTokenSecret": "xx",
+    "vote" : {
+      "train1Name": "viaBordeaux",
+      "train2Name": "viaLyon"
+    }
+  },
+  "rabbitMQ": {
+    "host": "host",
+    "user": "user",
+    "password": "password",
+    "queue": "twitter_consumer",
+    "exchangeConsumer": "xebiconExchange",
+    "exchangeProducer": "xebiconExchange"
+  }
+}

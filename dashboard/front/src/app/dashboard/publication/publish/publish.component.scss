@@ -1,0 +1,28 @@
+@import "../../../variables.style";
+
+:host {
+  display: block;
+  overflow: hidden;
+}
+
+.github-publication {
+  progress-bar {
+    margin: 34px 0;
+  }
+
+  .images {
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 49%;
+      object-fit: contain;
+      align-self: flex-start;
+    }
+
+    &.show {
+      transition: opacity 1s ease-in-out;
+      opacity: 1;
+    }
+  }
+}

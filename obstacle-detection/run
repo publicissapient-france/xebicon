@@ -1,0 +1,2 @@
+docker run -it -v $PWD/temp:/detection/ML -v $PWD/liveStreaming/stream:/detection/stream xebiafrance/xebicon-obstacle_detection:1.1 --rabbitUser user --rabbitPassword password --host 172.16.1.97 --visualize False
+

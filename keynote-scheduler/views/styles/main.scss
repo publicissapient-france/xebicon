@@ -1,0 +1,297 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "variables";
+@import "reset";
+
+$main-bg-color: #DCDCDC;
+$accent-blue: #37bbe4;
+$accent-gray: #e1e0dd;
+$accent-black: #35342f;
+$accent-orange: #f59300;
+$accent-red: #dd6464;
+
+$button-currentstate: green;
+$button-nextstate: orange;
+
+$header-box-shadow: 0 6px 3px -1px #cccccc;
+$card-box-shadow: 0 0 5px 3px #cccccc;
+
+body {
+  background-color: $main-bg-color;
+  color: $accent-black;
+
+  .main-app-container {
+    header {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      height: 5em;
+      background-color: white;
+      flex-direction: row;
+      padding: 20px;
+
+      box-shadow: $header-box-shadow;
+
+      h1 {
+        font-size: 2em;
+        text-align: left;
+        color: $accent-orange;
+        flex-grow: 1;
+      }
+
+      .config {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        .clock {
+
+        }
+      }
+    }
+
+    .content {
+      margin: 1em;
+
+      display: flex;
+      flex-flow: row wrap;
+      align-items: baseline;
+      align-content: center;
+      justify-content: center;
+
+      .title {
+        color: $accent-orange;
+      }
+
+      .card {
+        background-color: white;
+        width: auto;
+        height: auto;
+        padding: 1em;
+        border-radius: 3px;
+        box-shadow: $card-box-shadow;
+        margin: 1em;
+
+        h1.title {
+          color: $accent-orange;
+          font-size: 1.5em;
+          line-height: 1.5em;
+          text-align: center;
+        }
+      }
+
+      .events-list, .states, .jobs {
+        ul {
+          list-style-type: none;
+        }
+      }
+
+      .states {
+        .state-list {
+          li {
+            line-height: 23px;
+            &.mode-switch {
+              display: flex;
+              flex-flow: row nowrap;
+              align-items: center;
+
+              span {
+                flex-grow: 1;
+              }
+            }
+          }
+        }
+      }
+
+      .events-list {
+        flex-basis: 50%;
+        @media screen and (max-width: 1024px) {
+          flex-basis: 100%;
+        }
+        ul {
+          li {
+            button {
+              &.current {
+                background-color: $button-currentstate;
+              }
+              &.next {
+                background-color: $button-nextstate;
+              }
+            }
+          }
+        }
+      }
+
+      aside {
+        flex-basis: 35%;
+        @media screen and (max-width: 1024px) {
+          flex-basis: 100%;
+        }
+      }
+    }
+
+    .event-container {
+      $base-border-color: gainsboro !default;
+      $base-line-height: 0.3em !default;
+      $medium-screen: 40em !default;
+      $hover-tile-height: 3em;
+      $base-spacing: 1em;
+      $border-radius: 3px;
+      $text-color: black;
+
+      background: url("../assets/redox_01.png");
+      background-color: #fff;
+      background-position: top;
+      background-size: cover;
+      border: 1px solid $base-border-color;
+      cursor: pointer;
+      height: $hover-tile-height;
+      margin-bottom: $base-line-height;
+      border-radius: $border-radius;
+      color: $text-color;
+
+      /*@include media($medium-screen) {
+        width: 40%;
+      }*/
+
+      .event-tile-container {
+        height: $hover-tile-height;
+        overflow: hidden;
+      }
+
+      .event-tile-container.current > .event-tile {
+        transform: translate(0, -100%);
+      }
+
+      .event-tile {
+        background: inherit;
+        color: $text-color;
+        height: inherit;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+
+        display: flex;
+        align-items: center;
+        h4, span {
+          width: 100%;
+          text-align: center;
+        }
+        img {
+          margin-left: 5px;
+          width: 35px;
+        }
+      }
+
+      .event-tile-hidden {
+        background: transparentize(green, 0.5);
+
+        p {
+          color: transparentize(#fff, 0.3);
+          line-height: $base-line-height;
+        }
+
+        h4 {
+          //margin: 0 0 0.5em 0;
+        }
+      }
+    }
+
+    .label-switch {
+      $action-color: #477DCA !default;
+      $base-background-color: white !default;
+      $switch-width: 52px;
+      $switch-padding: 2px;
+      $switch-height: 32px;
+      $switch-radius: $switch-height;
+      $knob-size: $switch-height - ($switch-padding * 2);
+      $knob-radius: $switch-height - ($switch-padding * 2);
+      $knob-width: $knob-size;
+      $switch-background: $base-background-color;
+      $switch-border-background: darken($base-background-color, 9%);
+      $switch-shadow: 0 2px 5px transparentize(black, 0.6);
+
+      border-radius: $switch-radius;
+      cursor: pointer;
+      display: inline-block;
+      height: $switch-height;
+      position: relative;
+      width: $switch-width;
+
+      input[type="checkbox"] {
+        display: none;
+
+        + .checkbox {
+          background: $switch-border-background;
+          border: 0;
+          border-radius: $switch-radius;
+          cursor: pointer;
+          height: $switch-height;
+          margin: 0;
+          padding: 0;
+          position: relative;
+          transition: all 0.3s ease;
+          width: $switch-width;
+          z-index: 0;
+
+          &::before {
+            @include position(absolute, 2px 0 0 2px);
+            background: $switch-background;
+            border-radius: $switch-radius;
+            content: "";
+            height: $knob-radius;
+            transform: scale(1);
+            transition: all 0.3s ease;
+            width: $switch-width - ($switch-padding * 2);
+            z-index: 1;
+          }
+
+          &::after {
+            @include position(absolute, 2px 0 0 2px);
+            @include size($knob-size);
+            background: $switch-background;
+            border-radius: $knob-radius;
+            box-shadow: $switch-shadow;
+            content: "";
+            transition: all 0.3s ease;
+            z-index: 2;
+          }
+        }
+
+        &:checked {
+          + .checkbox {
+            background: $action-color;
+
+            &::before {
+              transform: scale(0);
+            }
+
+            &::after {
+              left: $switch-width - $knob-width - ($switch-padding);
+            }
+          }
+        }
+      }
+    }
+
+    .countdown {
+      $color: rgba(0, 128, 0, 0.5);
+      $small-font-size: 0.75em;
+      //background-color: $color;
+      border-radius: $small-font-size * 5;
+      color: #000;
+      font-size: $small-font-size;
+      font-weight: 600;
+      display: flex;
+      width: 25px;
+      height: 25px;
+      align-items: center;
+
+      .react-cntdwn-timer {
+        margin: auto;
+      }
+    }
+  }
+}
+
+@import "timeline";

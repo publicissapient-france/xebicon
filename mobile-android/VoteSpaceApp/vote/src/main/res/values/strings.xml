@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">VoteSpaceApp</string>
+    <string name="bordeaux">Bordeaux</string>
+    <string name="lyon">Lyon</string>
+    <string name="station_a">Train à destination de Bordeaux</string>
+    <string name="station_b">Train à destination de Lyon</string>
+
+    <string name="push_notification_title">Vote info</string>
+    <string name="welcome_message">Bienvenue à la Keynote de la Xebicon</string>
+
+    <string name="buy_pauillac">Pauillac</string>
+    <string name="buy_margaux">Margaux</string>
+    <string name="buy_pessac">Pessac</string>
+    <string name="buy_text">La dégustation est ouverte, goûtez nos grands crus classés. </string>
+
+    <string name="alcohol_consumption">L\'abus d\'alcool est dangereux pour la santé, à consommer avec modération.</string>
+    <string name="voted">Vous êtes dans le train à destination de %1$s</string>
+    <string name="has_voted">Merci pour votre vote et bon voyage !</string>
+
+    <string name="screen_welcome_title">Bienvenue</string>
+    <string name="screen_welcome_slogan">Knowledge should be for all</string>
+    <string name="screen_welcome_date">9 novembre 2016\nParis, France</string>
+
+    <string name="departure_for_city">Départ pour\n %1$s</string>
+    <string name="welcome_to_city">Bienvenue à\n %1$s</string>
+
+    <string name="end">Bienvenue à la Xebicon !</string>
+    <string name="obstacle">Un obstacle est présent sur la voie !</string>
+
+    <string name="hashtag_bdx">#ViaBdx</string>
+    <string name="hashtag_lyon">#ViaLyon</string>
+    <string name="vote">Voter</string>
+    <string name="vs">VS</string>
+    <string name="choose">Choisir</string>
+
+    <!-- Content description -->
+    <string name="xebicon_logo">Xebicon Logo</string>
+    <string name="train_for_lyon">train for Lyon</string>
+    <string name="train_for_bdx">train for Bordeaux</string>
+
+    <!-- Debug usage button text: to delete once release -->
+    <string name="menu_vote">Vote</string>
+    <string name="menu_buy">Buy</string>
+    <string name="vote_space_instruction">Vote Space: This text view should be deleted once this part is integrated in Xebicon app.
+        For test, upon receiving the KEYNOTE_START event, the screen will switch.
+    </string>
+    <string name="screen_end_title">Vous êtes arrivé à la</string>
+
+</resources>

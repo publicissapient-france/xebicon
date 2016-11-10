@@ -1,0 +1,8 @@
+src/xebicon/vendor/*/
+.cache
+bin
+pkg
+src/github.com
+
+dist/hotreload/hotreload
+dist/light/light

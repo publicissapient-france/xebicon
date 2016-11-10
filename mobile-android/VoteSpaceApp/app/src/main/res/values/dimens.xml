@@ -1,0 +1,49 @@
+<resources>
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+    https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="speaker_img">42dp</dimen>
+    <dimen name="conference_icon">40dp</dimen>
+    <dimen name="add_to_schedule_button_height">56dp</dimen>
+
+    <dimen name="keyline_1">16dp</dimen>
+    <dimen name="keyline_1_minus_8dp">8dp</dimen>
+    <dimen name="keyline_2">72dp</dimen>
+    <dimen name="keyline_2_minus_16dp">56dp</dimen>
+    <dimen name="keyline_2_session_detail">@dimen/keyline_2</dimen>
+
+    <dimen name="my_schedule_item_height">136dp</dimen>
+    <dimen name="my_schedule_item_height_break">80dp</dimen>
+    <dimen name="my_schedule_item_height_past">60dp</dimen>
+    <dimen name="my_schedule_time_column_width">100dp</dimen>
+    <dimen name="my_schedule_title_strip_padding">8dp</dimen>
+
+    <dimen name="text_size_xsmall">11sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+    <dimen name="text_size_diff_large_small">6sp</dimen>
+
+    <dimen name="filter_dropdown_item_padding_normal">16dp</dimen>
+    <dimen name="filter_dropdown_item_padding_indented">16dp</dimen>
+    <dimen name="filter_dropdown_item_width">240dp</dimen>
+    <dimen name="filter_dropdown_item_height">48dp</dimen>
+    <dimen name="filter_spinner_width">200dp</dimen>
+    <dimen name="filter_grid_padding">4dp</dimen>
+
+    <dimen name="spinner_left_padding">4dp</dimen>
+
+    <integer name="filter_spinner_weight">1</integer>
+    <dimen name="filterbar_height">48dp</dimen>
+
+    <!-- Action Bar auto-hide-on-scroll behavior parameters -->
+    <dimen name="action_bar_auto_hide_min_y">152dp</dimen>
+    <dimen name="action_bar_auto_hide_sensivity">48dp</dimen>
+
+    <dimen name="tag_color_dot_size">12dp</dimen>
+    <dimen name="explore_grid_padding">4dp</dimen>
+
+    <dimen name="talk_details_floating_width">500dp</dimen>
+    <dimen name="talk_details_floating_height">650dp</dimen>
+</resources>

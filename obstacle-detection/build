@@ -1,0 +1,2 @@
+docker build -t xebiafrance/xebicon-obstacle_detection:1.1 .
+

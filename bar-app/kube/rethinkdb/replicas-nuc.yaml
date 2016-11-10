@@ -1,0 +1,53 @@
+apiVersion: apps/v1alpha1
+kind: PetSet
+metadata:
+  labels:
+    db: rethinkdb
+    region: nuc
+  name: rethinkdb-replicas-nuc
+spec:
+  replicas: 3
+  serviceName: rethinkdb-replicas
+  template:
+    metadata:
+      labels:
+        db: rethinkdb
+        role: replica
+        region: nuc
+      annotations:
+        pod.alpha.kubernetes.io/initialized: "true"
+    spec:
+     containers:
+      - image: cedbossneo/rethinkdb-kubernetes:2.3.4
+        imagePullPolicy: Always
+        name: rethinkdb
+        command:
+          - /usr/bin/run.sh
+          - --server-tag nuc
+        env:
+        - name: POD_NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+        - name: RETHINK_CLUSTER
+          value: rethinkdb-cluster
+        ports:
+        - containerPort: 8080
+          name: admin-port
+        - containerPort: 28015
+          name: driver-port
+        - containerPort: 29015
+          name: cluster-port
+        volumeMounts:
+        - mountPath: /data
+          name: rethinkdb-storage
+  volumeClaimTemplates:
+    - metadata:
+        name: rethinkdb-storage
+        annotations:
+          volume.alpha.kubernetes.io/storage-class: anything
+      spec:
+        accessModes: [ "ReadWriteOnce" ]
+        resources:
+          requests:
+            storage: 30Gi

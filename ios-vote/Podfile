@@ -1,0 +1,22 @@
+platform :ios, '8.0'
+
+target 'TrainSubscription' do
+    use_frameworks!
+    
+    pod 'Firebase'
+    pod 'Firebase/Messaging'
+    
+    target 'TrainSubscriptionTests' do
+        inherit! :search_paths
+    end
+    
+    target 'TrainSubscriptionUITests' do
+        inherit! :search_paths
+    end
+    
+end
+
+target 'KeynoteVote' do
+    use_frameworks!
+    
+end

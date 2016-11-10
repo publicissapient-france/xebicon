@@ -1,0 +1,22 @@
+{
+  "name": "xebicon-facebook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "container": "docker run -p 3000:3000  xebiafrance/xebicon-fb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xebia-france/xebicon.git"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.3",
+    "express": "^4.14.0",
+    "unirest": "^0.5",
+    "winston": "^2.2.0",
+    "amqplib": "^0.4.2",
+    "redis": "*",
+    "body-parser": "*"
+  }
+}

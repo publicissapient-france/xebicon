@@ -1,0 +1,65 @@
+@import "../../../variables.style";
+@import "../../../mixins.style";
+
+.counter-container {
+  $bar-height: 40px;
+  text-align: left;
+
+  > div {
+    font-size: 30px;
+    display: inline-block;
+    width: 100%;
+    margin-top: 8px;
+
+    span {
+      width: $bar-height;
+      height: $bar-height;
+      vertical-align: middle;
+      line-height: $bar-height;
+    }
+
+    p {
+      width: 24%;
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+      border-radius: 4px;
+      height: $bar-height;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    &.ios {
+      color: #b2b2b2;
+      span.icon {
+        @include ios-icon($bar-height);
+        border-radius: 4px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+      }
+      p {
+        background-color: #b2b2b2;
+      }
+    }
+    &.android {
+      color: #a4c639;
+      span.icon {
+        @include android-icon($bar-height);
+        border-radius: 4px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+      }
+      p {
+        background-color: #a4c639;
+      }
+    }
+    &.fb {
+      color: rgb(59, 89, 159);
+      span.icon {
+        @include fb-icon($bar-height);
+        border-radius: 4px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+      }
+      p {
+        background-color: rgb(59, 89, 159);
+      }
+    }
+  }
+}

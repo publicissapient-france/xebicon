@@ -1,0 +1,24 @@
+#!/usr/bin/env groovy
+
+dockerNode(image: "golang:1.7"){
+    stage "checkout"
+    checkout scm
+    stage "build"
+    env.PATH = "/usr/local/go/bin:${env.PATH}"
+    dir('hotreload') {
+        sh "make build-hotreload"
+        stash includes: 'dist/hotreload/hotreload', name: 'hotreload'
+    }
+}
+
+node("docker"){
+    checkout scm
+    unstash 'hotreload'
+    dir('hotreload') {
+        docker.withRegistry('','dockerhub') {
+            stage "build image"
+            docker.build("xebiafrance/xebicon-hotreload","dist/hotreload").push("latest")
+        }
+    }
+
+}

@@ -1,0 +1,59 @@
+@import "../../variables.style";
+
+:host {
+  display: block;
+}
+
+train-message {
+  margin-top: -20px;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+camera {
+  flex-shrink: 0;
+  height: 500px;
+}
+
+train-info {
+  flex-grow: 1;
+  margin-right: 50px;
+}
+
+.arrow {
+  width: 100px;
+  height: auto;
+}
+
+.obstacle {
+  position: absolute;
+  left: 0;
+  top: -380px;
+  height: 280px;
+  width: 100%;
+  background: white;
+  text-align: center;
+  transition: all .5s ease 0s;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.12), 0 0 8px 0 rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    font-size: 64px;
+    color: $color-grey-text;
+  }
+
+  img {
+    margin-left: 30px;
+    height: 90%;
+  }
+
+  &.show {
+    top: 0;
+  }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fr.xebia.xebicon.ui.video.view.VideoItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:background="#fff"
+    android:foreground="?android:selectableItemBackground"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="165dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="164dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <!-- Video title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@string/font_fontFamily_medium"
+            android:maxLines="2"
+            android:textColor="@color/body_text_1"
+            android:textSize="@dimen/text_size_small"/>
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/body_text_3"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+</fr.xebia.xebicon.ui.video.view.VideoItemView>

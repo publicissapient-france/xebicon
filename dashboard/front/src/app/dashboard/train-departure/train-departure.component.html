@@ -1,0 +1,5 @@
+<train-message [message]="message$ | async"></train-message>
+<div>
+  <train-info [trainId]="trainId$ | async" [count]="count$ | async"></train-info>
+  <camera [url]="cameraDepartureUrl$ | async"></camera>
+</div>

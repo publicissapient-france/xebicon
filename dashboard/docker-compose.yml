@@ -1,0 +1,22 @@
+version: "2"
+
+services:
+#  rabbit:
+#    image: rabbitmq
+#    environment:
+#      - RABBITMQ_DEFAULT_USER=user
+#      - RABBITMQ_DEFAULT_PASS=password
+#    ports:
+#      - "5672:5672"
+#      - "15672:15672"
+
+  server:
+      image: node:5.12
+      working_dir: /usr/src/app
+      volumes:
+        - ./server:/usr/src/app
+#      environment:
+#        - RABBIT_HOST=192.168.99.102
+      command: ./start-server.sh
+      ports:
+            - "8001"

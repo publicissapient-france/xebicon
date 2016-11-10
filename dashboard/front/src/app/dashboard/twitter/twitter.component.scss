@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tweets {
+  display: flex;
+  margin: 15px;
+  overflow: hidden;
+  flex-grow: 1;
+}

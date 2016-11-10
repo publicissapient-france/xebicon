@@ -1,0 +1,442 @@
+{
+  "TWITTER": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "TWITTER"
+    }
+  },
+  "SLIDE 0": {
+    "type": "SLIDE",
+    "payload": {
+      "videoId": "zKRVRnbkjyk",
+      "value": "SLIDE 0 - Video Keynote"
+    }
+  },
+  "SLIDE 1": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S1.png",
+      "value": "SLIDE 1 - Yves Cazeaux"
+    }
+  },
+  "SLIDE 2": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S2.png",
+      "value": "SLIDE 2 - Luc Ferry"
+    }
+  },
+  "SLIDE 3": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S3.png",
+      "value": "SLIDE 3 - Solomon Hykes"
+    }
+  },
+  "SLIDE 4": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S4.png",
+      "value": "SLIDE 4 - XKE"
+    }
+  },
+  "SLIDE 5": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S5.png",
+      "value": "SLIDE 5 - Hacker"
+    }
+  },
+  "SLIDE 6": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S6.png",
+      "value": "SLIDE 6 - Google Car"
+    }
+  },
+  "SLIDE 61": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S61.png",
+      "value": "SLIDE 61 - Photo atelier"
+    }
+  },
+  "SLIDE 62": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S62.png",
+      "value": "SLIDE 62 - Photo train - TODO"
+    }
+  },
+  "SLIDE 7": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S7.png",
+      "value": "SLIDE 7 - Mode d'emploi"
+    }
+  },
+  "KEYNOTE_START": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "KEYNOTE_START"
+    }
+  },
+  "SLIDE 8": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S8.png",
+      "value": "SLIDE 8 - Architecture multi canal"
+    }
+  },
+  "SLIDE 9": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S9.png",
+      "value": "SLIDE 9 - Architecture IoT"
+    }
+  },
+  "VOTE_TRAIN_START": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "VOTE_TRAIN_START"
+    }
+  },
+  "VOTE_TRAIN_END": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "VOTE_TRAIN_END"
+    }
+  },
+  "TRAIN_DEPARTURE_SHOW_LYON": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "TRAIN_DEPARTURE_SHOW",
+      "trainId": 2
+    }
+  },
+  "TRAIN_DEPARTURE_START_LYON": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "TRAIN_DEPARTURE_START",
+      "trainId": 2
+    }
+  },
+  "TRAIN_DESCRIPTION_START_LYON": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "TRAIN_DESCRIPTION_START",
+      "trainId": 2
+    }
+  },
+  "TRAIN_POSITION_LYON": {
+    "type": "TRAIN_POSITION",
+    "payload": {
+      "trainId": 2,
+      "stationId": 2,
+      "value": "XXX BACKUP XXX - TRAIN_POSITION"
+    }
+  },
+  "TRAIN_DEPARTURE_END_LYON": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "TRAIN_DEPARTURE_END",
+      "trainId": 2
+    }
+  },
+  "HOT_DEPLOYMENT_START": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "HOT_DEPLOYMENT_START"
+    }
+  },
+  "HOT_DEPLOYMENT_PUSH_BUTTON": {
+    "type": "HOT_DEPLOYMENT_PUSH_BUTTON",
+    "payload": {
+      "value": "HOT_DEPLOYMENT_PUSH_BUTTON"
+    }
+  },
+  "HOT_DEPLOYMENT_END": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "HOT_DEPLOYMENT_END"
+    }
+  },
+  "SLIDE 10 - Architecture Hot Deploy": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S10.png",
+      "value": "SLIDE 10 - Architecture HotDeploy"
+    }
+  },
+  "TRAIN_DEPARTURE_SHOW_BORDEAUX": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "TRAIN_DEPARTURE_SHOW",
+      "trainId": 1
+    }
+  },
+  "TRAIN_DEPARTURE_START_BORDEAUX": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "TRAIN_DEPARTURE_START",
+      "trainId": 1
+    }
+  },
+  "TRAIN_DESCRIPTION_START_BORDEAUX": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "TRAIN_DESCRIPTION_START",
+      "trainId": 1
+    }
+  },
+  "TRAIN_DESCRIPTION_END_BORDEAUX": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "TRAIN_DESCRIPTION_END",
+      "trainId": 1
+    }
+  },
+  "TRAIN_POSITION_BORDEAUX": {
+    "type": "TRAIN_POSITION",
+    "payload": {
+      "value": "XXX BACKUP XXX - TRAIN_POSITION",
+      "trainId": 1,
+      "stationId": 1
+    }
+  },
+  "TRAIN_DEPARTURE_END_BORDEAUX": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "TRAIN_DEPARTURE_END",
+      "trainId": 1
+    }
+  },
+  "AVAILABILITY_START": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "AVAILABILITY_START"
+    }
+  },
+  "AVAILABILITY_END": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "AVAILABILITY_END"
+    }
+  },
+  "SLIDE 11 - Architecture high availability": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S11.png",
+      "value": "SLIDE 11 - Architecture Kubernetes"
+    }
+  },
+  "TRAIN_DEPARTURE_START_LYON_MID": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "TRAIN_DEPARTURE_START",
+      "trainId": 2
+    }
+  },
+  "OBSTACLE_LYON_START": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "OBSTACLE_START",
+      "trainId": 2
+    }
+  },
+  "OBSTACLE_LYON_COW": {
+    "type": "OBSTACLE",
+    "payload": {
+      "obstacle": true,
+      "obstacleType": "COW",
+      "value": "XXX BACKUP XXX - OBSTACLE LYON COW"
+    }
+  },
+  "OBSTACLE_LYON_PIG": {
+    "type": "OBSTACLE",
+    "payload": {
+      "obstacle": true,
+      "obstacleType": "PIG",
+      "value": "XXX BACKUP XXX - OBSTACLE LYON PIG"
+    }
+  },
+  "OBSTACLE_LYON_HORSE": {
+    "type": "OBSTACLE",
+    "payload": {
+      "obstacle": true,
+      "obstacleType": "HORSE",
+      "value": "XXX BACKUP XXX - OBSTACLE LYON HORSE"
+    }
+  },
+  "OBSTACLE_LYON_RABBIT": {
+    "type": "OBSTACLE",
+    "payload": {
+      "obstacle": false,
+      "obstacleType": "RABBIT",
+      "value": "XXX BACKUP XXX - OBSTACLE LYON RABBIT"
+    }
+  },
+  "OBSTACLE_LYON_CHICKEN": {
+    "type": "OBSTACLE",
+    "payload": {
+      "obstacle": false,
+      "obstacleType": "CHICKEN",
+      "value": "XXX BACKUP XXX - OBSTACLE LYON CHICKEN"
+    }
+  },
+  "OBSTACLE_LYON_CLEAR": {
+    "type": "OBSTACLE_CLEARED",
+    "payload": {
+      "value": "XXX BACKUP XXX - OBSTACLE LYON CLEAR"
+    }
+  },
+  "SLIDE 12 - Architecture machine learning": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S12.png",
+      "value": "SLIDE 12 - Architecture machine learning"
+    }
+  },
+  "OBSTACLE_LYON_END": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "OBSTACLE_END",
+      "trainId": 2
+    }
+  },
+  "TRAIN_POSITION_LYON_XEBICON": {
+    "type": "TRAIN_POSITION",
+    "payload": {
+      "trainId": 2,
+      "stationId": 3,
+      "value": "XXX BACKUP XXX - TRAIN_POSITION"
+    }
+  },
+  "TRAIN_DEPARTURE_START_BORDEAUX_MID": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "TRAIN_DEPARTURE_START",
+      "trainId": 1
+    }
+  },
+  "SLIDE 121 - Images TensorFlow": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S121.png",
+      "value": "SLIDE 121 - Images TensorFlow"
+    }
+  },
+  "OBSTACLE_BORDEAUX_START": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "OBSTACLE_START",
+      "trainId": 1
+    }
+  },
+  "OBSTACLE_BORDEAUX_COW": {
+    "type": "OBSTACLE",
+    "payload": {
+      "obstacle": true,
+      "obstacleType": "COW",
+      "value": "XXX BACKUP XXX - OBSTACLE BDX COW"
+    }
+  },
+  "OBSTACLE_BORDEAUX_PIG": {
+    "type": "OBSTACLE",
+    "payload": {
+      "obstacle": true,
+      "obstacleType": "PIG",
+      "value": "XXX BACKUP XXX - OBSTACLE BDX PIG"
+    }
+  },
+  "OBSTACLE_BORDEAUX_HORSE": {
+    "type": "OBSTACLE",
+    "payload": {
+      "obstacle": true,
+      "obstacleType": "HORSE",
+      "value": "XXX BACKUP XXX - OBSTACLE BDX HORSE"
+    }
+  },
+  "OBSTACLE_BORDEAUX_RABBIT": {
+    "type": "OBSTACLE",
+    "payload": {
+      "obstacle": false,
+      "obstacleType": "RABBIT",
+      "value": "XXX BACKUP XXX - OBSTACLE BDX RABBIT"
+    }
+  },
+  "OBSTACLE_BORDEAUX_CHICKEN": {
+    "type": "OBSTACLE",
+    "payload": {
+      "obstacle": false,
+      "obstacleType": "CHICKEN",
+      "value": "XXX BACKUP XXX - OBSTACLE BDX CHICKEN"
+    }
+  },
+  "OBSTACLE_BORDEAUX_CLEAR": {
+    "type": "OBSTACLE_CLEARED",
+    "payload": {
+      "value": "XXX BACKUP XXX - OBSTACLE BDX CLEAR"
+    }
+  },
+  "OBSTACLE_BORDEAUX_END": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "OBSTACLE_END",
+      "trainId": 1
+    }
+  },
+  "TRAIN_ARRIVED": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "TRAIN_ARRIVED",
+      "trainId": 1
+    }
+  },
+  "TRAIN_POSITION_BORDEAUX_XEBICON": {
+    "type": "TRAIN_POSITION",
+    "payload": {
+      "trainId": 1,
+      "stationId": 4,
+      "value": "XXX BACKUP XXX - TRAIN_POSITION"
+    }
+  },
+  "PUBLISH": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "PUBLISH"
+    }
+  },
+  "SLIDE 14 - Team": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S14.png",
+      "value": "SLIDE 13 - Team"
+    }
+  },
+  "SLIDE 13 - Programme": {
+    "type": "SLIDE",
+    "payload": {
+      "imageUrl": "https://s3-eu-west-1.amazonaws.com/xebicon-images/S13.png",
+      "value": "SLIDE 14 - Programme"
+    }
+  },
+  "CREDITS": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "CREDIT"
+    }
+  },
+  "KEYNOTE_END": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "KEYNOTE_END"
+    }
+  },
+  "TWITTER_END": {
+    "type": "KEYNOTE_STATE",
+    "payload": {
+      "value": "TWITTER"
+    }
+  }
+}

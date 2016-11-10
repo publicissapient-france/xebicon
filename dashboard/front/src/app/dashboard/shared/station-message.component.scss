@@ -1,0 +1,27 @@
+@import "../../variables.style";
+
+:host {
+  display: block;
+}
+
+div.content {
+  display: flex;
+  align-items: center;
+
+  station-icon {
+    width: 160px;
+    height: 160px;
+  }
+
+  station {
+    margin-left: 60px;
+  }
+
+  span {
+    color: $color-grey-text;
+    font-size: 64px;
+  }
+  span {
+    margin-left: 40px;
+  }
+}

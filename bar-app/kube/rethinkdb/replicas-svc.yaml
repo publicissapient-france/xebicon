@@ -1,0 +1,19 @@
+# A headless service to create DNS records
+apiVersion: v1
+kind: Service
+metadata:
+  name: rethinkdb-replicas
+  labels:
+    db: rethinkdb
+spec:
+  ports:
+    - port: 29015
+      targetPort: cluster-port
+      name: cluster-port
+    - port: 28015
+      targetPort: driver-port
+      name: driver-port
+  clusterIP: None
+  selector:
+    db: rethinkdb
+    role: replica

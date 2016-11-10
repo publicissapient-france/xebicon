@@ -1,0 +1,28 @@
+{
+  "name": "xebicon-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.4.2",
+    "body-parser": "^1.15.2",
+    "cfenv": "^1.0.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-session": "^1.14.0",
+    "firebase": "^3.3.0",
+    "node-gcm": "^0.14.3",
+    "nodemon": "^1.10.2",
+    "passport": "^0.3.2",
+    "passport-idaas-openidconnect": "^1.1.2",
+    "random-js": "^1.0.8",
+    "underscore": "^1.8.3"
+  }
+}

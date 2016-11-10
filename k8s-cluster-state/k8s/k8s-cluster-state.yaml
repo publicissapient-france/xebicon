@@ -1,0 +1,36 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: k8s-cluster-state
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: k8s-cluster-state
+    spec:
+      nodeSelector:
+        type: cloud
+      containers:
+      - name: k8s-cluster-state
+        image: xebiafrance/xebicon-k8s-cluster-state
+        env:
+        - name: K8S_POLLING_INTERVAL
+          value: "10000"
+        - name: K8S_CLIENT_TYPE
+          value: "poll"
+        - name: RABBITMQ_EXCHANGE
+          value: "xebiconExchange"
+        - name: RABBITMQ_HOST
+          value: "host"
+        - name: RABBITMQ_USERNAME
+          value: "user"
+        - name: RABBITMQ_PASSWORD
+          value: "password"
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "1"

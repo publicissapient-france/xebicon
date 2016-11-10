@@ -1,0 +1,92 @@
+@import "../../../variables.style";
+
+.votes-container {
+  $column-height: 120px;
+  $vs-radius: 160px;
+
+  .column {
+    width: 50%;
+    height: $column-height;
+    float: left;
+    transition: width .5s;
+    box-shadow: 0 10px 20px 0 $color-shadow;
+    white-space: nowrap;
+    border-radius: 4px;
+    position: relative;
+
+    &.column-left {
+      background-color: $color-purple;
+    }
+
+    &.column-right {
+      background-color: $color-tangerine;
+      text-align: right;
+
+      .vs {
+        width: $vs-radius;
+        height: $vs-radius;
+        background-color: white;
+        display: table;
+        text-align: center;
+        float: left;
+        margin-left: -$vs-radius / 2;
+        margin-top: ($column-height - $vs-radius) / 2 - 1;
+        border-radius: $vs-radius / 2;
+        line-height: 160px;
+        font-size: 64px;
+        font-weight: bold;
+        color: rgb(141, 147, 160);
+        box-shadow: 0 10px 20px 0 $color-shadow;
+        z-index: 1;
+        position: absolute;
+      }
+
+      .title {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+      }
+
+      span {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    span {
+      display: inline-block;
+      padding: 34px 30px;
+      font-size: 48px;
+      color: white;
+    }
+  }
+
+  &.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+
+  .results {
+    span {
+      display: inline-block;
+      font-size: 48px;
+      font-weight: bold;
+      margin-top: 30px;
+
+      &:first-child {
+        float: left;
+        color: $color-purple;
+      }
+      &:last-child {
+        float: right;
+        color: $color-tangerine;
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+<div class="votes-frequency-container">
+  <span *ngFor="let item of data">
+    <votes-frequency-item [data]="item" (voteExpired)="voteExpired.emit($event)"></votes-frequency-item>
+  </span>
+</div>

@@ -1,0 +1,64 @@
+.element {
+  &.group {
+    h3 {
+      margin-top: 150px;
+      display: inline-block;
+      padding-bottom: 4px;
+      color: #f9b651;
+      font-size: 50px;
+    }
+  }
+
+  &.logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    > div {
+      display: inline-block;
+    }
+
+    img {
+      height: 60px;
+      padding: 0 15px;
+      vertical-align: middle;
+
+      transition: transform 60s;
+    }
+
+    &.pompompom {
+      img {
+        transform: scaleX(-1);
+      }
+    }
+  }
+
+  &.text {
+    padding: 3px 0;
+    font-size: 34px;
+  }
+
+  &.note {
+    font-style: italic;
+    margin-top: 50px;
+  }
+
+  &.picture {
+    img {
+      width: 40em;
+      margin-top: 200px;
+      transform: rotate(-3deg);
+      margin-bottom: 200px;
+      border: 1em solid white;
+      //border-bottom: 5em solid;
+      border-radius: 5px;
+      box-shadow: 6px 7px 20px 0px rgba(171, 169, 169, 0.54);
+    }
+
+    .vertical {
+      img {
+        width: auto;
+        height: 40em;
+      }
+    }
+  }
+}

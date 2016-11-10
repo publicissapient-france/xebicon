@@ -1,0 +1,2 @@
+docker build -t xebia-france/python_opencv .
+

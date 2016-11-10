@@ -1,0 +1,7 @@
+<station-message [message]="'<Station1> Le bar à vin est ouvert !'"></station-message>
+
+
+<div class="content">
+  <shop-bill [data]="highAvailabilityShops$ | async | toJS"></shop-bill>
+  <clusters [clusters]="highAvailabilityNodes$ | async | toJS"></clusters>
+</div>

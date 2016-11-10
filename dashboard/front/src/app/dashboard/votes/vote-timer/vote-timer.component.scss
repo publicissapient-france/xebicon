@@ -1,0 +1,12 @@
+@import "../../../variables.style";
+
+:host {
+  display: block;
+
+  text-align: center;
+  box-sizing: border-box;
+  padding: 30px;  // TODO properly position vertically
+  color: #353535;
+  font-size: 48px;
+  font-family: $font-family;
+}

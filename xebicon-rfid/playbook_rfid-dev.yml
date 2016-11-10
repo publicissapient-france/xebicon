@@ -1,0 +1,45 @@
+# playbook_rfid.yml
+---
+
+- hosts: rfid
+  become: yes
+  user: pi
+
+  tasks:
+  - name: Copy json-id.json
+    copy: src=json-id.json
+          dest=/root/scripts/json-id.json
+          owner=root
+          group=root
+          mode=644
+          force=yes
+
+  - name: Copy cleanProcess.sh
+    copy: src=cleanProcess.sh
+          dest=/root/scripts/cleanProcess.sh
+          owner=root
+          group=root
+          mode=744
+          force=yes
+
+  - name: Copy detectTrain.py
+    copy: src=detectTrain.py
+          dest=/root/scripts/detectTrain.py
+          owner=root
+          group=root
+          mode=744
+          force=yes
+
+  - name: Copy isRunning.sh
+    copy: src=isRunning.sh
+          dest=/root/scripts/isRunning.sh
+          owner=root
+          group=root
+          mode=744
+          force=yes
+
+  - name: Reboot
+    shell: reboot
+
+  - name: Wait for server to restart
+    local_action: wait_for host={{ rfid }} state=started

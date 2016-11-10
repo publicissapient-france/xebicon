@@ -1,0 +1,59 @@
+<!--
+  Copyright 2014 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<resources>
+    <attr name="foreground" format="color|reference" />
+
+    <declare-styleable name="AppTheme">
+        <attr name="actionBarOverlayTopOffset" format="dimension" />
+        <attr name="actionBarInsetStart" format="dimension" />
+        <attr name="spinnerBarInsetStart" format="dimension" />
+        <attr name="popupItemBackground" format="dimension" />
+        <attr name="photoItemForeground" format="dimension" />
+        <attr name="listDropdownForegroundColor" format="reference" />
+        <attr name="myScheduleItemTouchOverlay" format="reference" />
+        <attr name="drawerItemActivatedSelector" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ExtendedRelativeLayout">
+        <attr name="foreground" />
+    </declare-styleable>
+
+    <declare-styleable name="ExtendedLinearLayout">
+        <attr name="foreground" />
+    </declare-styleable>
+
+    <declare-styleable name="DrawShadowFrameLayout">
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowTopOffset" format="dimension" />
+        <attr name="shadowVisible" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CollectionView">
+        <attr name="internalPadding" format="dimension" />
+        <attr name="contentTopClearance" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="BezelImageView">
+        <attr name="maskDrawable" format="reference" />
+        <attr name="borderDrawable" format="reference" />
+        <attr name="desaturateOnPress" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="Theme.Companion">
+        <attr name="isFloatingWindow" format="boolean" />
+    </declare-styleable>
+
+</resources>

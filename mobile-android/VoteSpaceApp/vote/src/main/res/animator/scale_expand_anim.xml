@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:ordering="together">
+    <!--
+        pivotX and pivotY: These properties control the location of the pivot point, around which the rotation and
+        scaling transforms occur. By default, the pivot point is located at the center of the object.
+       -->
+
+        <objectAnimator
+            android:duration="400"
+            android:propertyName="scaleX"
+            android:repeatCount="1"
+            android:repeatMode="reverse"
+            android:valueFrom="1.0"
+            android:valueTo="1.15"
+            android:valueType="floatType"/>
+
+        <objectAnimator
+            android:duration="400"
+            android:propertyName="scaleY"
+            android:repeatCount="1"
+            android:repeatMode="reverse"
+            android:valueFrom="1.0"
+            android:valueTo="1.15"
+            android:valueType="floatType"/>
+
+
+</set>

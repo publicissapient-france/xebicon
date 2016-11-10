@@ -1,0 +1,9 @@
+@import "neat/neat-helpers";
+
+// Overrides Neat's default
+//$max-width: em(1024);
+
+// Breakpoints
+$mobile: new-breakpoint(max-width 600px 4);
+
+$visual-grid-color: lighten(#FFF0E8, 3%);

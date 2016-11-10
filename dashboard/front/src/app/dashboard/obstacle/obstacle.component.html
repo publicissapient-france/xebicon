@@ -1,0 +1,11 @@
+<train-message [message]="message$ | async"></train-message>
+<div class="container">
+  <camera [url]="cameraConfig.cameraObstacleUrl"></camera>
+  <img *ngIf="cameraConfig.cameraObstacleFlux1Url" class="arrow" src="../../../assets/svg/arrow.svg" alt=""/>
+  <camera *ngIf="cameraConfig.cameraObstacleFlux1Url" [url]="cameraConfig.cameraObstacleFlux1Url"></camera>
+
+  <div [ngClass]="{'show': obstacleUrl !== ''}" class="obstacle">
+    <span>Obstacle détecté</span>
+    <img [src]="obstacleUrl"/>
+  </div>
+</div>

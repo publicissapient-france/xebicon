@@ -1,0 +1,15 @@
+{
+  "KEYNOTE_START": "Bienvenue à la Keynote XebiCon, vous êtes sur le point d'embarquer dans une aventure touristiquement technologique.",
+  "VOTE_TRAIN_START": "Veuillez choisir un train, le train Orange vous permet de visiter Lyon, le train Violet visite Bordeaux. Quel train souhaitez vous prendre ?",
+  "VOTE_TRAIN_END": "Les votes sont terminés !",
+  "TRAIN_DEPARTURE_START": "Départ imminent ! Veuillez garder bras et jambes à l'intérieur du wagon.",
+  "TRAIN_DEPARTURE_END": "Bienvenue à ${trainName}, ${trainDescription} !",
+  "HOT_DEPLOYMENT_START": "Nous avons détecté une anomalie dans le logiciel de gestion des lampadaires, nos ingénieurs lancent la précédure de récupération.",
+  "HOT_DEPLOYMENT_END": "Incidents lampadaires résolus. Préparez-vous au départ.",
+  "AVAILABILITY_START": "La dégustation est ouverte, goûtez nos grands crus classés. L'abus d'alcool est dangereux pour la santé, à consommer avec modération.",
+  "AVAILABILITY_END": "La dégustation est terminée, préparez vous au départ.",
+  "OBSTACLE_STOP": "Perturbation détectée sur les voies. La signalisation nous oblige un arrêt.",
+  "OBSTACLE_WARNING": "Perturbation détectée sur les voies. La signalisation nous oblige à adapter la vitesse.",
+  "OBSTACLE_CLEARED": "Perturbation résorbée.",
+  "TRAIN_POSITION": "Arrivée à la XebiCon : bienvenue."
+}

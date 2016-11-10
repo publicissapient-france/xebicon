@@ -1,0 +1,17 @@
+<div class="counter-container">
+  <div class="ios">
+    <span class="icon"></span>
+    <p [ngStyle]="{'width': 'calc(' + counterVote.iosWidth + '% - 120px)'}"></p>
+    <span>{{counterVote.iosPercentage}}%</span>
+  </div>
+  <div class="android">
+    <span class="icon"></span>
+    <p [ngStyle]="{'width': 'calc(' + counterVote.androidWidth + '% - 120px)'}"></p>
+    <span>{{counterVote.androidPercentage}}%</span>
+  </div>
+  <div class="fb">
+    <span class="icon"></span>
+    <p [ngStyle]="{'width': 'calc(' + counterVote.fbWidth + '% - 120px)'}"></p>
+    <span>{{counterVote.fbPercentage}}%</span>
+  </div>
+</div>

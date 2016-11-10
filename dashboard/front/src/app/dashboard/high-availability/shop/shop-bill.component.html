@@ -1,0 +1,28 @@
+<div class="shop">
+  <table>
+    <thead>
+      <tr>
+        <th>Commandes prises</th>
+        <th></th>
+        <th>Commandes traitées</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ data.buy.items.pauillac }}</td>
+        <td>Pauillac</td>
+        <td>{{ data.shops.items ? data.shops.items.pauillac : 0 }}</td>
+      </tr>
+      <tr>
+        <td>{{ data.buy.items.margaux }}</td>
+        <td>Margaux</td>
+        <td>{{ data.shops.items ? data.shops.items.margaux : 0}}</td>
+      </tr>
+      <tr>
+        <td>{{ data.buy.items.pessac }}</td>
+        <td>Pessac</td>
+        <td>{{ data.shops.items ? data.shops.items.pessac : 0}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

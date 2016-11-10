@@ -1,0 +1,14 @@
+#!/usr/bin/env groovy
+
+node("docker"){
+    properties([parameters([password( name: 'RABBITMQ_PASSWORD')]), pipelineTriggers([])])
+    stage "checkout"
+    checkout scm
+    dir('ci') {
+        stage "pull"
+        sh 'docker-compose -p xebicon pull'
+        stage "update"
+        sh 'docker-compose -p xebicon up -d'
+    }
+
+}

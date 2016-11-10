@@ -1,0 +1,20 @@
+@import "../../variables.style";
+
+:host {
+  display: inline-block;
+}
+
+div {
+  font-size: 64px;
+  font-weight: bold;
+  &.train-1 {
+    span {
+      color: $color-train-1;
+    }
+  }
+  &.train-2 {
+    span {
+      color: $color-train-2;
+    }
+  }
+}

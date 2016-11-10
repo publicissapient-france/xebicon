@@ -1,0 +1,57 @@
+@import "../variables.style";
+
+h1.ks-label {
+  text-align: center;
+}
+.ks-cmt {
+  border-bottom: 3px solid burlywood;
+  background-color: rgb(232, 233, 236);
+}
+
+.ks-cmt > label {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+  border: 1px solid grey;
+  background: aliceblue;
+}
+
+:host {
+  .credits-control {
+    label {
+      display: inline-block;
+      padding: 0;
+      text-align: left;
+      margin: 0;
+      border: 0 none;
+      background: none;
+    }
+  }
+
+  .credits-fullscreen {
+    height: 100%;
+    width: 100%;
+
+    .credits-control {
+      z-index: 10000;
+      color: white;
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      opacity: 0.2;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    /deep/ .elevator {
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+  }
+}

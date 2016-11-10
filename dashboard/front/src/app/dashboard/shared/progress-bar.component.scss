@@ -1,0 +1,40 @@
+@import "../../variables.style";
+
+:host {
+  display: block;
+
+  $bar-height: 100px;
+  $title-size: 45px;
+
+  span {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: $title-size;
+    color: white;
+    line-height: $bar-height;
+  }
+
+  div {
+    height: $bar-height;
+    transition: width .5s;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  > div {
+    position: relative;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: #c0c7d6;
+    border-radius: 4px;
+
+    > div {
+      display: inline-block;
+      float: left;
+      position: absolute;
+      left: 0;
+      width: 0;
+    }
+  }
+}
+
+

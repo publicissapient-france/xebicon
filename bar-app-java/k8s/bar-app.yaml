@@ -1,0 +1,46 @@
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  labels:
+    app: bar-app
+  name: bar-app
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: bar-app
+      labels:
+        app: bar-app
+        display: bar-app
+      annotations:
+       scheduler.alpha.kubernetes.io/affinity: >
+         {
+           "nodeAffinity": {
+             "preferredDuringSchedulingIgnoredDuringExecution": [{
+                   "weight": 100,
+                   "preference": {
+                      "matchExpressions": [
+                        {
+                          "key": "type",
+                          "operator": "In",
+                          "values": ["local"]
+                        }
+                      ]
+                   }
+             }]
+           }
+         }
+    spec:
+      terminationGracePeriodSeconds: 0
+      containers:
+        - name: bar-app
+          image: xebiafrance/xebicon-bar-app
+          env:
+            - name: RABBITMQ_EXCHANGE
+              value: xebiconExchange
+            - name: RABBITMQ_HOST
+              value: "host"
+            - name: RABBITMQ_USERNAME
+              value: user
+            - name: RABBITMQ_PASSWORD
+              value: password

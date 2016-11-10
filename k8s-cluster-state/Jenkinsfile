@@ -1,0 +1,14 @@
+#!groovy
+node("docker") {
+    stage 'Checkout'
+    checkout scm
+
+    // Put tools in the env
+    env.PATH = "${tool 'mvn-3.3.9'}/bin:${env.PATH}"
+    env.PATH = "${tool 'docker-1.12.0'}/bin:${env.PATH}"
+
+    dir('k8s-cluster-state') {
+        stage 'Build'
+        sh 'mvn -DskipTests -DpushImage clean package docker:build'
+    }
+}

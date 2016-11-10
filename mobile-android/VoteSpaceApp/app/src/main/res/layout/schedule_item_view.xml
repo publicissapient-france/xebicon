@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<fr.xebia.xebicon.ui.schedule.ScheduleItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_margin="2dp"
+    app:foreground="?photoItemForeground">
+
+    <ImageView
+        android:id="@+id/schedule_bg_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/schedule_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.6"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        tools:text="Karma and Protractor, test your AngularJS application"/>
+
+
+    <TextView
+        android:id="@+id/schedule_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/schedule_speakers"
+        android:layout_alignRight="@+id/schedule_speakers"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="5"
+        android:padding="4dp"
+        android:textColor="@android:color/white"
+        tools:text="Karma and Protractor, test your AngularJS application"/>
+
+    <TextView
+        android:id="@+id/schedule_speakers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.7"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:lines="1"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        tools:text="Karma and Protractor, test your AngularJS application"/>
+
+    <!-- "In schedule" indicator -->
+    <ImageView
+        android:id="@+id/indicator_in_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@null"
+        android:src="@drawable/indicator_in_schedule"/>
+
+</fr.xebia.xebicon.ui.schedule.ScheduleItemView>

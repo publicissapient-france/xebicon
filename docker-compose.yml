@@ -1,0 +1,87 @@
+version: "2"
+
+services:
+
+  hotreload:
+    image: xebiafrance/xebicon-hotreload
+    environment:
+      - "RABBITMQ_URL=amqp://user:${RABBITMQ_PASSWORD}@${RABBITMQ_URL}"
+      - "LIGHT_IMAGE=xebiafrance/xebicon-light"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+
+  scheduler:
+    image: xebiafrance/xebicon-scheduler
+    ports:
+      - "8085:3000"
+    environment:
+      - "NODE_ENV=production"
+      - "RABBIT_EXCHANGE=xebiconExchange"
+      - "RABBIT_USER=user"
+      - "RABBIT_PASSWORD=${RABBITMQ_PASSWORD}"
+      - "RABBIT_HOST=${RABBITMQ_URL}"
+
+  dashboard:
+    image: xebiafrance/xebicon-dashboard
+    ports:
+      - "8086:8001"
+    environment:
+      - "NODE_ENV=production"
+      - "RABBIT_EXCHANGE=xebiconExchange"
+      - "RABBIT_USER=user"
+      - "RABBIT_PASSWORD=${RABBITMQ_PASSWORD}"
+      - "RABBIT_HOST=${RABBITMQ_URL}"
+      - "REDIS_HOST=redis"
+      - "REDIS_PORT=6379"
+
+  mobile-back:
+    image: xebiafrance/mobile-vote-server
+    ports:
+      - "8087:3001"
+    environment:
+      - "RABBIT_EXCHANGE=xebiconExchange"
+      - "RABBIT_USER=user"
+      - "RABBIT_PASSWORD=${RABBITMQ_PASSWORD}"
+      #- "RABBIT_HOST=${RABBITMQ_URL}"
+      - "RABBIT_HOST=1.1.1.1"
+
+  facebook:
+    image: xebiafrance/xebicon-fb:latest
+    ports:
+      - "8090:443"
+    environment:
+      - "FB_PAGE_TOKEN=${FB_TOKEN}"
+      - "FB_VERIFY_TOKEN=${FB_PASS}"
+      - "REDIS_URL=${FB_REDIS_URL}"
+      - "FULLCHAIN_PATH=/etc/letsencrypt/live/fullchain.pem"
+      - "PRIVKEY_PATH=/etc/letsencrypt/live/privkey.pem"
+      - "AMQP_EXCHANGE=xebiconExchange"
+      - "AMQP_USER=user"
+      - "AMQP_PASSWORD=${RABBITMQ_PASSWORD}"
+      - "AMQP_HOST=${RABBITMQ_URL}"
+      - "AMQP_URL=amqp://user:${RABBITMQ_PASSWORD}@${RABBITMQ_URL}"
+    volumes:
+      - "/etc/letsencrypt/xebicon:/etc/letsencrypt/live"
+
+  how-to:
+    image: xebiafrance/xebicon-how-to
+    restart: always
+    ports:
+      - "80:80"
+
+  twitter:
+    image: xebiafrance/xebicon-twitter
+    restart: always
+    environment:
+      - "NODE_ENV=production"
+      - "RABBIT_EXCHANGE=xebiconExchange"
+      - "RABBIT_USER=user"
+      - "RABBIT_PASSWORD=${RABBITMQ_PASSWORD}"
+      - "RABBIT_HOST=${RABBITMQ_URL}"
+      - "REDIS_HOST=redis"
+      - "REDIS_PORT=6379"

@@ -1,0 +1,28 @@
+version: "2"
+
+services:
+
+   monitoring:
+      image: google/cadvisor
+      container_name: cadvisor
+      restart: always
+      volumes:
+        - "/:/rootfs:ro"
+        - "/var/run:/var/run:rw"
+        - "/sys:/sys:ro"
+        - "/var/lib/docker/:/var/lib/docker:ro"
+      ports:
+        - "8081:8080"
+
+   reloader:
+      image: xebiafrance/xebicon-reloader
+      restart: always
+      volumes:
+        - "../xebicon/:/data/xebicon"
+        - "/var/run/docker.sock:/var/run/docker.sock"
+        - "/usr/bin/docker:/usr/bin/docker"
+      ports:
+        - "6000:8080"
+      command: reloader /data/xebicon/docker-compose.yml
+
+

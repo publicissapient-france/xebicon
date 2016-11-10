@@ -1,0 +1,30 @@
+@import "../../variables.style";
+
+:host {
+  display: block;
+}
+
+train-message {
+  margin-top: 10px;
+}
+
+div {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  img {
+    height: 450px;
+  }
+
+}
+
+camera {
+  text-align: center;
+  height: 450px;
+  flex-shrink: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+}

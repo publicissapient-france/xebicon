@@ -1,0 +1,14 @@
+<div class="tweet">
+  <div *ngIf="imageUrl" class="image">
+    <img [src]="imageUrl"/>
+  </div>
+  <div class="message">{{ message }}</div>
+  <div class="footer">
+    <img class="avatar" [src]="avatarUrl"/>
+    <span class="from">
+      <span class="username">{{ username }}</span>
+      <span class="timestamp">{{ formattedTweetedAt }}</span>
+    </span>
+    <span class="twitter-logo"></span>
+  </div>
+</div>

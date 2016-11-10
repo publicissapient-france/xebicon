@@ -1,0 +1,33 @@
+{
+  "name": "twitter-bot",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "eslint": "eslint src/**/*.js",
+    "start": "node ./bin/twitter-bot",
+    "start:dev": "nodemon ./bin/twitter-bot"
+  },
+  "dependencies": {
+    "amqplib": "^0.4.2",
+    "bluebird": "^3.4.1",
+    "body-parser": "~1.15.1",
+    "config": "^1.21.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "hbs": "~4.0.0",
+    "lodash": "^4.15.0",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.14.1",
+    "morgan": "~1.7.0",
+    "redis": "^2.6.2",
+    "serve-favicon": "~2.3.0",
+    "twit": "^2.2.4",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.3.1",
+    "eslint-config-nodejs": "^1.1.0",
+    "eslint-plugin-import": "^1.14.0",
+    "nodemon": "^1.10.2"
+  }
+}

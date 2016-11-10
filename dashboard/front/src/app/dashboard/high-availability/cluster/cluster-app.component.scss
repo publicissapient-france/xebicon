@@ -1,0 +1,39 @@
+:host {
+  display: inline-block;
+}
+
+$active: #85bf68;
+$cluster: #353535;
+
+.cluster-app {
+  width: 100%;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #000000;
+
+  &.active{
+    background: $active;
+  }
+
+  &.down {
+    opacity: 0.2;
+  }
+
+  .cluster-app-type {
+
+    border-radius: 100%;
+    margin-right: -10px;
+    margin-top: -2px;
+    float: right;
+    width: 36px;
+    height: 36px;
+
+    &.database {
+      background: $cluster url(../../../assets/svg/ico-database.svg) no-repeat center;
+    }
+
+    &.bar-app {
+      background: $cluster url(../../../assets/svg/ico-beer.svg) no-repeat center;
+    }
+  }
+}

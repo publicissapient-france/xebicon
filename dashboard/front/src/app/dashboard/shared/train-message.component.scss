@@ -1,0 +1,48 @@
+@import "../../variables.style";
+
+:host {
+  display: block;
+}
+
+div.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  train-icon {
+    width: 160px;
+    height: 160px;
+  }
+
+  > div {
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    &.train-1 {
+      train-icon {
+        background-color: $color-train-1;
+      }
+    }
+    &.train-2 {
+      train-icon {
+        background-color: $color-train-2;
+      }
+    }
+    train {
+      margin-left: 60px;
+    }
+    span {
+      color: $color-grey-text;
+      font-size: 64px;
+    }
+    .space {
+      margin-left: 20px;
+    }
+  }
+
+  .way {
+    font-size: 64px;
+    color: $color-black;
+  }
+
+}

@@ -1,0 +1,77 @@
+version: "2"
+
+services:
+
+  hotreload:
+    image: xebiafrance/xebicon-hotreload
+    environment:
+      - "RABBITMQ_URL=amqp://xebia:${RABBITMQ_PASSWORD}@${RABBITMQ_URL}"
+      - "LIGHT_IMAGE=xebiafrance/xebicon-light"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+
+  scheduler:
+    image: xebiafrance/xebicon-scheduler
+    ports:
+      - "8085:3000"
+    environment:
+      - "NODE_ENV=production"
+      - "RABBIT_EXCHANGE=xebiconExchange"
+      - "RABBIT_USER=xebia"
+      - "RABBIT_PASSWORD=${RABBITMQ_PASSWORD}"
+      - "RABBIT_HOST=${RABBITMQ_URL}"
+
+  dashboard:
+    image: xebiafrance/xebicon-dashboard
+    ports:
+      - "8086:8001"
+    environment:
+      - "NODE_ENV=production"
+      - "RABBIT_EXCHANGE=xebiconExchange"
+      - "RABBIT_USER=xebia"
+      - "RABBIT_PASSWORD=${RABBITMQ_PASSWORD}"
+      - "RABBIT_HOST=${RABBITMQ_URL}"
+
+  mobile-back:
+    image: xebiafrance/mobile-vote-server
+    ports:
+      - "8087:3000"
+    environment:
+      - "RABBIT_EXCHANGE=xebiconExchange"
+      - "RABBIT_USER=xebia"
+      - "RABBIT_PASSWORD=${RABBITMQ_PASSWORD}"
+      - "RABBIT_HOST=${RABBITMQ_URL}"
+
+  facebook:
+    image: xebiafrance/xebicon-fb:latest
+    ports:
+      - "8090:443"
+    environment:
+      - "FB_PAGE_TOKEN=EAANT5ZBYZAqZB8BAAgfoC5KWEMF63lLZC1l4Bz70NCNjwHVnuKj3FgFHp94bZCtQ7PUbdqr0kbPg4iklNgMs1ZAtuWSi6FY0O2ryZCRWT4KOu9LY09FIxFmiiLzKBZCpNEcCfgXt87a4yt0NAOE10x3sIxnfueWXZBLsTxPZC2arjhjAZDZD"
+      - "FB_VERIFY_TOKEN=pass;1234"
+      - "REDIS_URL=xebicon-redis.apwedd.ng.0001.euc1.cache.amazonaws.com"
+      - "FULLCHAIN_PATH=/etc/letsencrypt/live/dev.keynote.xebicon.fr/fullchain.pem"
+      - "PRIVKEY_PATH=/etc/letsencrypt/live/dev.keynote.xebicon.fr/privkey.pem"
+      - "AMQP_EXCHANGE=xebiconExchange"
+      - "AMQP_USER=xebia"
+      - "AMQP_PASSWORD=${RABBITMQ_PASSWORD}"
+      - "AMQP_HOST=${RABBITMQ_URL}"
+      - "AMQP_URL=amqp://xebia:${RABBITMQ_PASSWORD}@${RABBITMQ_URL}"
+    volumes:
+      - "/etc/letsencrypt/nosymlink:/etc/letsencrypt/live"
+
+  twitter:
+    image: xebiafrance/xebicon-twitter
+    environment:
+      - "NODE_ENV=production"
+      - "RABBIT_EXCHANGE=xebiconExchange"
+      - "RABBIT_USER=xebia"
+      - "RABBIT_PASSWORD=${RABBITMQ_PASSWORD}"
+      - "RABBIT_HOST=${RABBITMQ_URL}"
+      - "REDIS_HOST=redis"
+      - "REDIS_PORT=6379"

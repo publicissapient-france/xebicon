@@ -1,0 +1,32 @@
+@import "variables.style";
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto/Roboto-Bold.ttf');
+  font-weight: bold;
+}
+
+html, body {
+  height: 100%;
+  font-family: $font-family;
+  background-color: $backgroundColor;
+}
+
+app {
+  height: 100%;
+  display: block;
+}
+
+dashboard {
+  height: 100%;
+  display: block;
+}
+
+span.active {
+  background-color: gray;
+}

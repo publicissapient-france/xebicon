@@ -1,0 +1,12 @@
+#!/usr/bin/env groovy
+
+node("docker"){
+    checkout scm
+    dir('dashboard') {
+        docker.withRegistry('','dockerhub') {
+            stage "build image"
+            docker.build("xebiafrance/dashboard").push("latest")
+        }
+    }
+
+}

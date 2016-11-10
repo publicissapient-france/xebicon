@@ -1,0 +1,70 @@
+# playbook_rfid.yml
+---
+
+- hosts: rfid
+  become: yes
+  user: pi
+
+  tasks:
+  - name: Update APT package cache
+    apt: update_cache=yes
+
+  - name: Install Python and tools
+    apt: pkg={{ item }} state=present
+    with_items:
+    - python-dev
+    - python-pyscard
+    - python-crypto
+
+  - name: Install library
+    apt: pkg={{ item }} state=present
+    with_items:
+    - libusb-dev
+    - libnfc-bin
+
+  - name: Git repository RFIDIoT
+    git:  repo=https://github.com/AdamLaurie/RFIDIOt.git dest=/root/sources/rfidiot force=yes
+
+  - name: Change file right
+    file: path=/root/sources/rfidiot/setup.py mode=744
+
+  - name: Install RFIDIoT
+    command: 'python setup.py install'
+    args:
+      chdir: /root/sources/rfidiot
+
+
+  - name: Install requests module
+    pip: name=requests
+
+  - name: Create directory
+    file: path=/root/scripts state=directory mode=744
+
+  - name: Copy detectTrain.py
+    copy: src=detectTrain.py
+          dest=/root/scripts/detectTrain.py
+          owner=root
+          group=root
+          mode=744
+          force=yes
+
+  - name: Copy isRunning.sh
+    copy: src=isRunning.sh
+          dest=/root/scripts/isRunning.sh
+          owner=root
+          group=root
+          mode=744
+          force=yes
+
+  - name: Cron activation
+    cron: name=isRunning minute="*" job="/root/scripts/isRunning.sh detectTrain"
+
+  # - name: Configure Wi-Fi
+  #   template: src=wpa_supplicant.conf.j2
+  #             dest=/etc/wpa_supplicant/wpa_supplicant.conf
+  #             owner=root
+  #             group=root
+  #   notify: Reload WPA Supplicant
+  #
+  # - name : Reload WPA Supplicant
+  #   command: /sbin/wpa_cli reconfigure && /sbin/wpa_cli reassociate

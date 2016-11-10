@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    tools:context=".ui.VoteFragment">
+
+    <TextView
+        android:id="@+id/vote_status_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:textColor="@color/promptGray"
+        android:textSize="@dimen/prompt_medium"
+        tools:text="Veuillez voter pour votre train"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/vote_hashtag_container_bottom_padding">
+
+            <RelativeLayout
+                android:id="@+id/button_bdx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:id="@+id/departure_image_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/vote_train_bottom_margin"
+                    android:background="@drawable/round_shape_bdx_small"
+                    android:duplicateParentState="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/vote_train_width"
+                        android:layout_height="@dimen/vote_train_height"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/train_for_bdx"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/train"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vote_hashtag_text_height"
+                    android:layout_below="@+id/departure_image_container"
+                    android:background="@color/colorBdx"
+                    android:duplicateParentState="true"
+                    android:padding="@dimen/vote_hashtag_text_padding"
+                    android:text="@string/hashtag_bdx"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/prompt_medium"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btx_lyon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:id="@+id/train_lyon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/vote_train_bottom_margin"
+                    android:background="@drawable/round_shape_lyon_small"
+                    android:duplicateParentState="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/vote_train_width"
+                        android:layout_height="@dimen/vote_train_height"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/train_for_lyon"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/train"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vote_hashtag_text_height"
+                    android:layout_below="@+id/train_lyon"
+                    android:background="@color/colorLyon"
+                    android:duplicateParentState="true"
+                    android:padding="@dimen/vote_hashtag_text_padding"
+                    android:text="@string/hashtag_lyon"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/prompt_medium"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/vote_vs_circle_bottom_margin"
+            android:background="@drawable/round_shape_white"
+            android:duplicateParentState="true">
+
+            <TextView
+                android:layout_width="@dimen/vote_vs_circle_size"
+                android:layout_height="@dimen/vote_vs_circle_size"
+                android:layout_gravity="center"
+                android:contentDescription="@string/train_for_lyon"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:text="@string/vs"
+                android:textSize="@dimen/prompt_medium"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/vote_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:enabled="false"
+        android:text="@string/vote"/>
+
+</RelativeLayout>

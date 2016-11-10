@@ -1,0 +1,27 @@
+@import "../../variables.style";
+
+:host {
+  display: inline-block;
+}
+
+div {
+  span {
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: white;
+    padding: 0 20px;
+  }
+
+  &.station-1 {
+    span {
+      background-color: $color-train-1;
+    }
+  }
+  &.station-2 {
+    span {
+      background-color: $color-train-2;
+    }
+  }
+}

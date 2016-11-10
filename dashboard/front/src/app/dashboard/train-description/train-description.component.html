@@ -1,0 +1,9 @@
+<train-message [message]="message$ | async"></train-message>
+<div class="train-desc-container">
+  <div class="passengers-container">
+    <passenger-list
+      [passengers]="passengersTrainRows"
+      (passengerItemGone)="onPassengerItemGone($event)"
+    ></passenger-list>
+  </div>
+</div>

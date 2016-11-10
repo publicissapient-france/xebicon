@@ -1,0 +1,9 @@
+<div class="thread">
+  <tweet *ngFor="let tweet of thread; trackBy:tweetIdentity" class="animation"
+         [username]="tweet.username"
+         [avatarUrl]="tweet.avatarUrl"
+         [imageUrl]="tweet.imageUrl"
+         [message]="tweet.message"
+         [tweetedAt]="tweet.tweetedAt">
+  </tweet>
+</div>

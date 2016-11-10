@@ -1,0 +1,2 @@
+docker run -it -p 8100:8080 -v $PWD/stream:/detection/stream xebiafrance/xebicon-streamodetection:1.1
+

@@ -1,0 +1,33 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="prompt_big">30sp</dimen>
+    <dimen name="prompt_small">18sp</dimen>
+    <dimen name="prompt_medium">22sp</dimen>
+    <dimen name="screen_welcome_vertical_offset">20dp</dimen>
+
+    <dimen name="round_shape_size_big">280dp</dimen>
+    <dimen name="round_shape_size_medium">140dp</dimen>
+    <dimen name="round_shape_size_small">80dp</dimen>
+    <dimen name="vote_train_bottom_margin">100dp</dimen>
+    <dimen name="vote_hashtag_text_padding">15dp</dimen>
+
+    <!-- a little math here to make sure everything aligns well -->
+    <!-- vote_hashtag_container_bottom_padding = vote_vs_circle_size - vote_hashtag_text_height -->
+    <!-- vote_vs_circle_bottom_margin = vote_hashtag_container_bottom_padding / 2 -->
+    <dimen name="vote_hashtag_text_height">60dp</dimen>
+    <dimen name="vote_vs_circle_size">90dp</dimen>
+    <dimen name="vote_vs_circle_bottom_margin">15dp</dimen>
+    <dimen name="vote_hashtag_container_bottom_padding">30dp</dimen>
+    <dimen name="vote_train_width">65dp</dimen>
+    <dimen name="vote_train_height">100dp</dimen>
+
+    <dimen name="status_train_width">110dp</dimen>
+    <dimen name="status_train_height">200dp</dimen>
+    <dimen name="departure_screen_xebicon_logo_height">51dp</dimen>
+    <dimen name="status_image_container_size">250dp</dimen>
+    <dimen name="status_message_padding">15dp</dimen>
+    <dimen name="wine_bottle_height">180dp</dimen>
+    <dimen name="logo_xebicon_width">300dp</dimen>
+</resources>

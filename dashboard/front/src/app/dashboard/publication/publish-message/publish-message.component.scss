@@ -1,0 +1,18 @@
+@import "../../../variables.style";
+@import "../../../mixins.style";
+
+:host {
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 64px;
+    margin-left: 34px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+  }
+}

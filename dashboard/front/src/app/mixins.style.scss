@@ -1,0 +1,70 @@
+@mixin train-icon($radius) {
+  display: inline-block;
+  width: $radius;
+  height: $radius;
+  border-radius: $radius/2;
+  background: grey url(../assets/svg/train.svg) no-repeat center;
+  background-size: 64% 64%;
+}
+
+@mixin gare-icon($radius) {
+  display: inline-block;
+  width: $radius;
+  height: $radius;
+  border-radius: $radius/2;
+  background: grey url(../assets/svg/ico-gare.svg) no-repeat center;
+  background-size: 64% 64%;
+}
+
+@mixin twitter-icon($radius) {
+  width: $radius;
+  height: $radius;
+  display: inline-block;
+  border-radius: 50px;
+  background: #3aaae1 url(../assets/svg/twitter.svg) no-repeat center;
+  background-size: 59% 59%;
+}
+
+@mixin fb-icon($radius) {
+  width: $radius;
+  height: $radius;
+  display: inline-block;
+  border-radius: 50px;
+  background: rgb(59, 89, 159) url(../assets/svg/facebook.svg) no-repeat center;
+  background-size: 70% 70%;
+}
+
+@mixin ios-icon($radius) {
+  width: $radius;
+  height: $radius;
+  display: inline-block;
+  border-radius: 50px;
+  background: #b2b2b2 url(../assets/svg/ios.svg) no-repeat center;
+  background-size: 64% 64%;
+}
+
+@mixin android-icon($radius) {
+  width: $radius;
+  height: $radius;
+  display: inline-block;
+  border-radius: 50px;
+  background: #a4c639 url(../assets/svg/android.svg) no-repeat center;
+  background-size: 64% 64%;
+}
+
+@mixin xebicon-icon($radius) {
+  width: $radius;
+  height: $radius;
+  display: inline-block;
+  border-radius: 50px;
+  background: #b2b2b2 url(../assets/svg/ios.svg) no-repeat center;
+  background-size: 64% 64%;
+}
+
+@mixin github-icon($radius) {
+  width: $radius;
+  height: $radius;
+  display: inline-block;
+  background: url(../assets/svg/github.svg) no-repeat center;
+  background-size: 100% 100%;
+}

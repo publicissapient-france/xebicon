@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Spinners for additional filters -->
+    <LinearLayout
+        android:id="@+id/filters_box"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/filterbar_height"
+        android:background="?colorPrimary"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="?spinnerBarInsetStart"
+        android:paddingRight="?spinnerBarInsetStart">
+
+        <Spinner
+            android:id="@+id/secondary_filter_spinner_1"
+            style="@style/Widget.Companion.HeaderBar.Spinner"
+            android:layout_width="@dimen/filter_spinner_width"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/filter_spinner_weight"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_talks"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/schedule_grid"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

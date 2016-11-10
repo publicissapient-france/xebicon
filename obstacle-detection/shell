@@ -1,0 +1,2 @@
+docker run -it xebia-france/obstacle_detection /bin/bash
+

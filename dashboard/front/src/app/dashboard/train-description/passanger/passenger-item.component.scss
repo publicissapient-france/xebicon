@@ -1,0 +1,52 @@
+@import "../../../variables.style";
+
+.passenger {
+  position: relative;
+  display: flex;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background-color: #ccc;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  &.SMS {
+    background: rgb(245, 126, 0) url(../../../../assets/svg/sms.svg) no-repeat center;
+    background-size: 54% 54%;
+    border-radius: 50%;
+  }
+  &.ANDROID {
+    background: #a4c639 url(../../../../assets/svg/android.svg) no-repeat center;
+    background-size: 64% 64%;
+    border-radius: 50%;
+  }
+  &.IOS {
+    background: #b3b3b3 url(../../../../assets/svg/ios.svg) no-repeat center;
+    background-size: 64% 64%;
+    border-radius: 50%;
+  }
+  &.TWITTER {
+    border-radius: 50px;
+    background: #3aaae1 url(../../../../assets/svg/twitter.svg) no-repeat center;
+    background-size: 54% 54%;
+    border-radius: 50%;
+  }
+  &.FB {
+    background: #3C5A99 url(../../../../assets/svg/facebook.svg) no-repeat center;
+    background-size: 70% 70%;
+    border-radius: 50%;
+  }
+  &.AVATAR {
+    background-size: contain;
+    border-radius: 50%;
+  }
+}
+
+.faded-true {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.faded-false {
+  opacity: 1;
+}

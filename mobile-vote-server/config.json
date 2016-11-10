@@ -1,0 +1,7 @@
+{
+  "RABBIT_EXCHANGE": "xebiconMobile",
+  "RABBIT_USER": "user",
+  "RABBIT_PASSWORD": "password",
+  "RABBIT_PORT": "port",
+  "RABBIT_HOST": "host"
+}

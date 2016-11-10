@@ -1,0 +1,59 @@
+version: "2"
+
+services:
+   rabbit:
+      hostname: my-rabbit:3.6.5
+      image: rabbitmq:3-management
+      environment:
+      - "RABBITMQ_DEFAULT_USER=xebia"
+      - "RABBITMQ_DEFAULT_PASS=${RABBITMQ_PASSWORD}"
+      ports:
+      - "8081:15672"
+      - "5672:5672"
+
+   hotreload:
+      image: xebiafrance/xebicon-hotreload
+      environment:
+      - "RABBITMQ_URL=amqp://xebia:${RABBITMQ_PASSWORD}@rabbit"
+      - "LIGHT_IMAGE=xebiafrance/xebicon-light"
+      volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+#   twitter-bot:
+#      image: xebiafrance/xebicon-twitter
+#      environment:
+#      - "NODE_ENV=production"
+#      - "RABBITMQ_URL=amqp://xebia:${RABBITMQ_PASSWORD}@rabbit"
+
+   mobile-vote-server:
+      image: xebiafrance/mobile-vote-server
+      ports:
+      - "8084:3000"
+      environment:
+      - "NODE_ENV=production"
+      - "RABBIT_EXCHANGE=xebiconExchange"
+      - "RABBIT_USER=xebia"
+      - "RABBIT_PASSWORD=${RABBITMQ_PASSWORD}"
+      - "RABBIT_HOST=rabbit"
+
+   scheduler:
+      image: xebiafrance/xebicon-scheduler
+      ports:
+      - "8085:3000"
+      environment:
+      - "NODE_ENV=production"
+      - "RABBIT_EXCHANGE=xebiconExchange"
+      - "RABBIT_USER=xebia"
+      - "RABBIT_PASSWORD=${RABBITMQ_PASSWORD}"
+      - "RABBIT_HOST=rabbit"
+
+   dashboard:
+      image: xebiafrance/xebicon-dashboard
+      ports:
+      - "8086:8001"
+      environment:
+      - "NODE_ENV=production"
+      - "RABBIT_EXCHANGE=xebiconExchange"
+      - "RABBIT_USER=xebia"
+      - "RABBIT_PASSWORD=${RABBITMQ_PASSWORD}"
+      - "RABBIT_HOST=rabbit"

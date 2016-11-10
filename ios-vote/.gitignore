@@ -1,0 +1,6 @@
+*.tmp
+*.idea
+*node_modules
+*xcuserdata
+*DerivedData
+Breakpoints_v2.xcbkptlist

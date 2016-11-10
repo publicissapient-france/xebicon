@@ -1,0 +1,51 @@
+@import "../variables.style";
+
+welcome {
+  height: 100%;
+}
+
+rails {
+  height: 280px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.12), 0 0 8px 0 rgba(0, 0, 0, 0.06);
+}
+
+.screen-with-rails {
+  position: relative;
+  padding: 340px 60px 0 60px;
+  height: 100%;
+  box-sizing: border-box;
+  min-height: 1080px;
+}
+
+hot-deployment {
+  text-align: center;
+  display: block;
+}
+
+high-availability {
+}
+
+vote {
+  display: block;
+  position: relative;
+  padding-top: 280px;
+  height: 100%;
+  box-sizing: border-box;
+  min-height: 1080px;
+}
+
+:host {
+  .credits {
+    height: 100%;
+    width: 100%;
+
+    /deep/ .elevator {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

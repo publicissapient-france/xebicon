@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/developers">
+        <Preference
+            android:defaultValue="Not Set"
+            android:key="dev_1"
+            android:selectable="false"
+            android:summary="apiroelle@xebia.fr"
+            android:title="Arnaud Piroelle"/>
+
+        <Preference
+            android:defaultValue="Not Set"
+            android:key="dev_1"
+            android:selectable="false"
+            android:summary="mobile@xebia.fr"
+            android:title="Xebia Mobile"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/general">
+
+        <Preference
+            android:defaultValue="Not Set"
+            android:key="version_key"
+            android:selectable="false"
+            android:title="@string/version"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

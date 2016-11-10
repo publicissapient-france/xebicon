@@ -1,0 +1,14 @@
+@import "../../variables.style";
+@import "../../mixins.style";
+
+:host {
+  display: block;
+}
+
+github-publish {
+  max-height: 1000px;
+  &.hide {
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+  }
+}

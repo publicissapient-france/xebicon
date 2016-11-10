@@ -1,0 +1,2 @@
+docker build -t xebiafrance/xebicon-streamodetection:1.1 .
+

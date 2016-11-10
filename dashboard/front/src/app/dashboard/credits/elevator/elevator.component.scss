@@ -1,0 +1,43 @@
+.elevator {
+  color: white;
+  text-align: center;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: url('../../../assets/pics/sunshine.jpg') rgba(0, 0, 0, 0.80);
+  background-size: cover;
+  background-blend-mode: color;
+
+  &.develop {
+    overflow: scroll;
+
+    .elevator-cab {
+      top: 0;
+      transition: none;
+    }
+  }
+
+  .elevator-cab {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    transition: transform 60s linear;
+
+    .thankyou {
+      font-size: 100px;
+      margin-top: 100vh;
+      margin-bottom: 45vh;
+      transition: opacity 3s ease-in-out;
+    }
+
+    &.move {
+      transform: translateY(-100%);
+    }
+  }
+
+  &.end {
+    .thankyou {
+      opacity: 0;
+    }
+  }
+}

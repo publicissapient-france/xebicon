@@ -1,0 +1,4 @@
+<resources>
+    <item name="myschedule_viewtype_tagkey" type="id"/>
+    <item name="myschedule_item_tagkey" type="id"/>
+</resources>

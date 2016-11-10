@@ -1,0 +1,116 @@
+@import "../../variables.style";
+@import "../../mixins.style";
+
+.voting {
+  position: relative;
+  height: 100%;
+
+  .trains-icons {
+    $train-circle-radius: 160px;
+    display: flex;
+    height: 34%;
+    min-height: 170px;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-bottom: 60px;
+
+    train-icon {
+      width: $train-circle-radius;
+      height: $train-circle-radius;
+      align-self: center;
+
+      &:first-child {
+        background-color: $color-purple;
+      }
+      &:last-child {
+        background-color: $color-tangerine;
+      }
+    }
+  }
+
+  .vertical-separation {
+    top: 6%;
+    position: absolute;
+    width: 50%;
+    height: 58%;
+    min-height: 320px;
+    border-right: dashed 4px $color-grey-text;
+  }
+
+  votes-distribution {
+    display: block;
+  }
+
+  .frequency {
+    display: flex;
+    margin-top: 28px;
+
+    votes-frequency {
+      width: 50%;
+    }
+  }
+
+  .message {
+    text-align: center;
+    color: $color-grey-text;
+
+    .message-winner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      text-align: right;
+
+      vote-counter {
+        display: inline-block;
+        width: 50%;
+      }
+      span {
+        width: 50%;
+        display: inline-block;
+        font-size: 64px;
+        margin-top: 90px;
+        margin-bottom: 8px;
+      }
+    }
+
+    .message-vote {
+      font-size: 48px;
+      $icon-height: 60px;
+      text-align: left;
+      margin-top: 25px;
+      div {
+        .twitter-icon {
+          @include twitter-icon($icon-height);
+        }
+        .fb-icon {
+          @include fb-icon($icon-height);
+        }
+        .xebicon-icon {
+          @include xebicon-icon($icon-height);
+        }
+
+        div:last-child {
+          display: inline-block;
+          color: $color-purple;
+          text-align: left;
+          line-height: $icon-height;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+
+  .timer {
+    width: 560px;
+    height: 115px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px 0 $color-shadow;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+}

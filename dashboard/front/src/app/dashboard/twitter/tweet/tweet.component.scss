@@ -1,0 +1,75 @@
+@import "../../../variables.style";
+
+$avatar-size: 60px;
+
+:host {
+  display: block;
+  overflow: hidden;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.tweet {
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 15px;
+  font-size: 26px;
+
+  .image {
+    height: 231px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      max-height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+
+  .message {
+    color: $color-black;
+    margin-bottom: 19px;
+  }
+
+  .footer {
+    display: flex;
+
+    .avatar {
+      width: $avatar-size;
+      height: $avatar-size;
+      border-radius: 50%;
+    }
+
+    .from {
+      margin-left: 12px;
+      flex-grow: 1;
+
+      .username {
+        font-weight: bold;
+        color: $color-purple;
+        padding-bottom: 2px;
+        display: block;
+      }
+
+      .timestamp {
+        color: $color-grey-text;
+        font-size: 22px;
+      }
+    }
+
+    .twitter-logo {
+      margin-top: 18px;
+      width: 30px;
+      height: 24px;
+      background-color: #3aaae1;
+      -webkit-mask-image: url(../../../assets/svg/twitter.svg);
+      mask-image: url(../../../assets/svg/twitter.svg);
+    }
+  }
+}

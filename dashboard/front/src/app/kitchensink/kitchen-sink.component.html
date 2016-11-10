@@ -1,0 +1,227 @@
+<h1 class="ks-label">Kitchen Sink</h1>
+<hr/>
+
+<div class="ks-cmt">
+  <label>Vote Counter</label>
+
+  <vote-counter [data]="{ios: 25, android: 67, fb: 14}"></vote-counter>
+</div>
+
+<div class="ks-cmt" [ngClass]="{'credits-fullscreen':creditsFullscreen}">
+  <label>Credits</label>
+
+  <elevator [enable]="elevatorEnable" [develop]="elevatorDevelop"></elevator>
+  <div class="credits-control">
+    <button type="button" class="btn btn-default" (click)="elevatorDevelop = false; elevatorEnable = true">Play</button>
+    <label><input type="checkbox" [(ngModel)]="elevatorDevelop" /> Debug</label>
+    <label><input type="checkbox" [(ngModel)]="creditsFullscreen" /> Fullscreen</label>
+  </div>
+</div>
+
+<!--<div class="ks-cmt">-->
+  <!--<label>Youtube</label>-->
+  <!--<youtube-player-->
+    <!--[videoId]="ytId"-->
+    <!--[width]="500"-->
+    <!--[height]="300"-->
+    <!--(ready)="ytSavePlayer($event)"-->
+    <!--(change)="ytOnStateChange($event)"-->
+  <!--&gt;-->
+  <!--</youtube-player>-->
+
+  <!--<button type="button" class="btn btn-default" (click)="ytPlayVideo()">Play</button>-->
+  <!--<button type="button" class="btn btn-default" (click)="ytPauseVideo()">Pause</button>-->
+
+<!--</div>-->
+
+<div class="ks-cmt">
+  <label>Progress bar</label>
+  <progress-bar [title]="'I am a progress bar'" [done]="20"></progress-bar>
+</div>
+
+<div class="ks-cmt">
+  <label>Votes</label>
+  <votes-distribution [data]="votesDistribution"></votes-distribution>
+
+  <form>
+    <div class="form-group">
+      <label for="left">Left</label>
+      <input name="left" id="left" type="number" [(ngModel)]="votesDistributionModel[0]" #itemLeft
+             (ngModelChange)="votesDistributionChange(itemLeft.value)" required>
+    </div>
+    <div class="form-group">
+      <label for="right">Fight</label>
+      <input name="right" id="right" type="number" [(ngModel)]="votesDistributionModel[1]" #itemRight
+             (ngModelChange)="votesDistributionChange(itemRight.value)" required>
+    </div>
+  </form>
+  <button (click)="votesDistributionRandom()">Random</button>
+</div>
+
+<div class="ks-cmt" style="padding-bottom: 30px">
+  <label>Header</label>
+  <xebicon-header></xebicon-header>
+</div>
+
+<div class="ks-cmt">
+  <label>Tweet</label>
+
+  <div style="display: flex; margin: 15px; height: 700px; overflow: hidden">
+    <tweet-thread [thread]="threads.get(0) | toJS"></tweet-thread>
+    <tweet-thread [thread]="threads.get(1) | toJS"></tweet-thread>
+    <tweet-thread [thread]="threads.get(2) | toJS"></tweet-thread>
+  </div>
+</div>
+
+<div class="ks-cmt">
+  <label>Camera</label>
+  <camera></camera>
+</div>
+
+<div class="ks-cmt">
+  <label>Train 1 Info</label>
+  <train-info style="width: 100%" [trainId]="1" [count]="57"></train-info>
+</div>
+
+<div class="ks-cmt">
+  <label>Train 2 Info</label>
+  <train-info style="width: 100%" [trainId]="2" [count]="276"></train-info>
+</div>
+
+<div class="ks-cmt">
+  <label>Station 1 Message</label>
+  <station-message [message]="'<Station1> Le bar est ouvert'"></station-message>
+</div>
+
+<div class="ks-cmt">
+  <label>Train 1 Message</label>
+  <train-message [message]="'<Train1> est arrivé en <Station1>'"></train-message>
+</div>
+
+<div class="ks-cmt">
+  <label>Train 1 Message</label>
+  <train-message [message]="'<Train1> est en route vers <XebiConImg>'"></train-message>
+</div>
+
+<div class="ks-cmt">
+  <label>Train 1 Message</label>
+  <train-message [message]="'<Train1> est au départ <Voie2>'"></train-message>
+</div>
+
+<div class="ks-cmt">
+  <label>Train 2 Message</label>
+  <train-message [message]="'<Train2> est au départ <Voie1>'"></train-message>
+</div>
+
+<div class="ks-cmt">
+  <label>Cluster</label>
+  <clusters [clusters]="clusters"></clusters>
+</div>
+
+<div class="ks-cmt">
+  <label>Single shop bill</label>
+  <shop-bill [data]="shopData"></shop-bill>
+</div>
+
+
+<div class="ks-cmt">
+  <label>Vote Timer</label>
+  <vote-timer [voteDuration]="voteDuration"></vote-timer>
+</div>
+
+<div class="ks-cmt">
+  <label>Vote Timer Expired</label>
+  <vote-timer [voteDuration]="2"></vote-timer>
+</div>
+
+<div class="ks-cmt">
+  <label>To time pipe</label>
+  <div>180 => {{ 180 | toTime }}</div>
+  <div>163 => {{ 163 | toTime }}</div>
+  <div>42 => {{ 42 | toTime }}</div>
+</div>
+
+<div class="ks-cmt">
+  <label>Station 1</label>
+  <station [stationId]="1"></station>
+</div>
+
+<div class="ks-cmt">
+  <label>Station 2</label>
+  <station [stationId]="2"></station>
+</div>
+
+<div class="ks-cmt">
+  <label>Train 1</label>
+  <train [trainId]="1"></train>
+</div>
+
+<div class="ks-cmt">
+  <label>Train 2</label>
+  <train [trainId]="2"></train>
+</div>
+
+<div class="ks-cmt">
+  <label>Twitter Icon</label>
+  <twitter-icon></twitter-icon>
+</div>
+
+<div class="ks-cmt">
+  <label>Station Icon</label>
+  <station-icon style="height: 100px; width: 100px"></station-icon>
+</div>
+
+<div class="ks-cmt">
+  <label>Train Icon</label>
+  <train-icon style="height: 100px; width: 100px"></train-icon>
+</div>
+
+<div class="ks-cmt">
+  <label>Passenger</label>
+  <passenger-item
+    [passenger]="passengerData"
+    passengerId="1"
+    style="height: 100px; width: 100px"></passenger-item>
+  <button (click)="refreshPassenger()">Refresh</button>
+</div>
+
+&lt;!&ndash; make kitchensink crash... &ndash;&gt;
+<div class="ks-cmt">
+  <label>Passenger list</label>
+  <div class="passengers-container">
+    <passenger-list
+      [passengers]="passengersData"
+      (passengerItemGone)="onPassengerItemGone($event)"
+      style="height: 100px; width: 100px"
+    ></passenger-list>
+  </div>
+</div>
+
+<div class="ks-cmt">
+  <label>Votes Frequency Item</label>
+  <votes-frequency-item [data]="votesFrequencyItem" (voteExpired)="onVoteItemExpired($event)"></votes-frequency-item>
+  <br/>
+  <button (click)="votesFrequencyItemShow('IOS')">iOS</button>
+  <button (click)="votesFrequencyItemShow('ANDROID')">Android</button>
+  <button (click)="votesFrequencyItemShow('SMS')">SMS</button>
+  <button (click)="votesFrequencyItemShow('TWITTER')">Twitter</button>
+  <button (click)="votesFrequencyItemShow('FB')">FaceBook</button>
+</div>
+
+<div class="ks-cmt">
+  <label>Votes Frequency</label>
+  <votes-frequency [data]="votesFrequency" (voteExpired)="onVoteExpired($event)"></votes-frequency>
+  <button (click)="votesFrequencyRandom()">Random</button>
+  <button (click)="votesFrequencyRandomStart()">Start</button>
+  <button (click)="votesFrequencyRandomStop()">Stop</button>
+</div>
+
+<div class="ks-cmt">
+  <label>Hot Deployment</label>
+  <hot-deployment></hot-deployment>
+</div>
+
+<!--<div class="ks-cmt">-->
+  <!--<label>welcome</label>-->
+  <!--<welcome></welcome>-->
+<!--</div>-->

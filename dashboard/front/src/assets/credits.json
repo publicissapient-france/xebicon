@@ -1,0 +1,560 @@
+{
+  "resources": {
+    "kotlin": {
+      "src": "/assets/logos/kotlin.png"
+    },
+    "nodejs": {
+      "src": "/assets/logos/nodejs.png"
+    },
+    "swift": {
+      "src": "/assets/logos/swift.png",
+      "height": 60
+    },
+    "rabbitmq": {
+      "src": "/assets/logos/rabbitmq.png"
+    },
+    "aws": {
+      "src": "/assets/logos/aws.jpg",
+      "height": 58
+    },
+    "golang": {
+      "src": "/assets/logos/golang.png",
+      "height": 100
+    },
+    "docker": {
+      "src": "/assets/logos/docker.png",
+      "height": 100
+    },
+    "googleappengine": {
+      "src": "/assets/logos/googleappengine.png",
+      "height": 100
+    },
+    "kubernetes": {
+      "src": "/assets/logos/kubernetes.svg"
+    },
+    "pi": {
+      "src": "/assets/logos/pi.png"
+    },
+    "arduino": {
+      "src": "/assets/logos/arduino.png"
+    },
+    "python": {
+      "src": "/assets/logos/python.png"
+    },
+    "react": {
+      "src": "/assets/logos/react.png",
+      "height": 80
+    },
+    "angular": {
+      "src": "/assets/logos/angular.png",
+      "height": 60
+    },
+    "redux": {
+      "src": "/assets/logos/redux.png",
+      "height": 80
+    },
+    "socketio": {
+      "src": "/assets/logos/socketio.png"
+    },
+    "tensorflow": {
+      "src": "/assets/logos/tensorflow.png"
+    },
+    "opencv": {
+      "src": "/assets/logos/opencv.png"
+    },
+    "loyal": {
+      "src": "/assets/logos/loyal.png",
+      "height": 100
+    },
+    "twitter": {
+      "src": "/assets/logos/twitter.png"
+    },
+    "indien": {
+      "src": "/assets/logos/indien.png",
+      "height": 120
+    },
+    "pompom": {
+      "src": "/assets/logos/pompom.png",
+      "height": 100
+    },
+    "train": {
+      "src": "/assets/pics/train.jpg"
+    },
+    "dashboard": {
+      "src": "/assets/pics/dashboard.jpg"
+    },
+    "pizzas": {
+      "src": "/assets/pics/pizzas.jpg",
+      "type": "vertical"
+    },
+    "rails": {
+      "src": "/assets/pics/rails.jpg"
+    },
+    "green": {
+      "src": "/assets/pics/green.jpg",
+      "type": "vertical"
+    },
+    "vache": {
+      "src": "/assets/pics/vache.jpg"
+    },
+    "beacons": {
+      "src": "/assets/pics/beacons.jpg"
+    }
+  },
+  "elements": [
+    {
+      "type": "group",
+      "name": "Nombre de technos utilisées",
+      "elements": [
+        {
+          "type": "text",
+          "text": 18
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Nombre de développeurs impliqués",
+      "elements": [
+        {
+          "type": "text",
+          "text": 26
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Nombre de commits",
+      "elements": [
+        {
+          "type": "text",
+          "text": 600
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Nombre d’heures",
+      "elements": [
+        {
+          "type": "text",
+          "text": 2640
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Nombre de pizzas ingérées",
+      "elements": [
+        {
+          "type": "text",
+          "text": 42
+        }
+      ]
+    },
+    {
+      "type": "picture",
+      "ref": "pizzas"
+    },
+    {
+      "type": "group",
+      "name": "Application Android",
+      "elements": [
+        {
+          "type": "logo",
+          "ref": "kotlin"
+        },
+        {
+          "type": "logo",
+          "ref": "nodejs"
+        },
+        {
+          "type": "text",
+          "text": "Qian Jin"
+        },
+        {
+          "type": "text",
+          "text": "Arnaud Piroelle"
+        },
+        {
+          "type": "text",
+          "text": "Laurent Russier"
+        },
+        {
+          "type": "text",
+          "text": "Thomas Depinoy"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Application iPhone",
+      "elements": [
+        {
+          "type": "logo",
+          "ref": "swift"
+        },
+        {
+          "type": "text",
+          "text": "Roksolana Ivanovna"
+        },
+        {
+          "type": "text",
+          "text": "Simone Civetta"
+        },
+        {
+          "type": "text",
+          "text": "Jean-Christophe Pastant"
+        },
+        {
+          "type": "text",
+          "text": "Julien Datour"
+        },
+        {
+          "type": "text",
+          "text": "Jéromin Lebon"
+        }
+      ]
+    },
+    {
+      "type": "picture",
+      "ref": "train"
+    },
+    {
+      "type": "group",
+      "name": "Architecture Réactive",
+      "elements": [
+        {
+          "type": "logo",
+          "ref": "rabbitmq"
+        },
+        {
+          "type": "logo",
+          "ref": "aws"
+        },
+        {
+          "type": "text",
+          "text": "Thomas Auffredou"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Maquettiste",
+      "elements": [
+        {
+          "type": "text",
+          "text": "Olivier Lanen"
+        }
+      ]
+    },
+    {
+      "type": "picture",
+      "ref": "rails"
+    },
+    {
+      "type": "group",
+      "name": "Design",
+      "elements": [
+        {
+          "type": "text",
+          "text": "Johan Marie"
+        },
+        {
+          "type": "note",
+          "text": "Certaines images ont été designées par Freepik"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Ordonnanceur",
+      "elements": [
+        {
+          "type": "logo",
+          "ref": "react"
+        },
+        {
+          "type": "logo",
+          "ref": "redux"
+        },
+        {
+          "type": "text",
+          "text": "Thomas Carvalho"
+        },
+        {
+          "type": "text",
+          "text": "Benjamin Lacroix"
+        }
+      ]
+    },
+    {
+      "type": "picture",
+      "ref": "green"
+    },
+    {
+      "type": "group",
+      "name": "Déploiement à chaud",
+      "elements": [
+        {
+          "type": "logo",
+          "ref": "golang"
+        },
+        {
+          "type": "logo",
+          "ref": "docker"
+        },
+        {
+          "type": "text",
+          "text": "Thomas Auffredou"
+        },
+        {
+          "type": "text",
+          "text": "Jean-Louis Rigau"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Haute disponibilité",
+      "elements": [
+        {
+          "type": "logo",
+          "ref": "docker"
+        },
+        {
+          "type": "logo",
+          "ref": "googleappengine"
+        },
+        {
+          "type": "logo",
+          "ref": "kubernetes"
+        },
+        {
+          "type": "text",
+          "text": "Jean-Baptiste Claramonte"
+        },
+        {
+          "type": "text",
+          "text": "Tomas Rodriguez"
+        },
+        {
+          "type": "text",
+          "text": "Cédric Hauber"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "IoT - Pilotage de la maquette",
+      "elements": [
+        {
+          "type": "logo",
+          "ref": "pi"
+        },
+        {
+          "type": "logo",
+          "ref": "arduino"
+        },
+        {
+          "type": "logo",
+          "ref": "python"
+        },
+        {
+          "type": "text",
+          "text": "Jean Pascal Thiery"
+        },
+        {
+          "type": "text",
+          "text": "Olivier Pietremont"
+        }
+      ]
+    },
+    {
+      "type": "picture",
+      "ref": "dashboard"
+    },
+    {
+      "type": "group",
+      "name": "Dashboard",
+      "elements": [
+        {
+          "type": "logo",
+          "ref": "nodejs"
+        },
+        {
+          "type": "logo",
+          "ref": "angular"
+        },
+        {
+          "type": "logo",
+          "ref": "redux"
+        },
+        {
+          "type": "logo",
+          "ref": "socketio"
+        },
+        {
+          "type": "text",
+          "text": "Dmytro Podyachiy"
+        },
+        {
+          "type": "text",
+          "text": "Abdelhakim Bachar"
+        },
+        {
+          "type": "text",
+          "text": "Ludovic Ladeu"
+        },
+        {
+          "type": "text",
+          "text": "Antoine Le Taxin"
+        },
+        {
+          "type": "text",
+          "text": "Thomas Champion"
+        },
+        {
+          "type": "text",
+          "text": "Alexandre Dergham"
+        }
+      ]
+    },
+    {
+      "type": "picture",
+      "ref": "beacons"
+    },
+    {
+      "type": "group",
+      "name": "Deep Learning",
+      "elements": [
+        {
+          "type": "logo",
+          "ref": "tensorflow"
+        },
+        {
+          "type": "logo",
+          "ref": "opencv"
+        },
+        {
+          "type": "logo",
+          "ref": "python"
+        },
+        {
+          "type": "text",
+          "text": "Yoann Benoit"
+        },
+        {
+          "type": "text",
+          "text": "Fabian Gutierrez"
+        },
+        {
+          "type": "text",
+          "text": "Diana Ortega"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Monsieur Loyal",
+      "elements": [
+        {
+          "type": "logo",
+          "ref": "loyal"
+        },
+        {
+          "type": "text",
+          "text": "Pablo Lopez"
+        },
+        {
+          "type": "text",
+          "text": "Thibaud Cavin"
+        },
+        {
+          "type": "text",
+          "text": "Luc Legardeur"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Twitter",
+      "elements": [
+        {
+          "type": "logo",
+          "ref": "twitter"
+        },
+        {
+          "type": "logo",
+          "ref": "nodejs"
+        },
+        {
+          "type": "text",
+          "text": "Paul-Guillaume Dejardin"
+        },
+        {
+          "type": "text",
+          "text": "Benjamin Lacroix"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Accompagnement - Conseils",
+      "elements": [
+        {
+          "type": "text",
+          "text": "Meriem El Aaboudi"
+        },
+        {
+          "type": "text",
+          "text": "Clément Rochas"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Grand Organisateur",
+      "elements": [
+        {
+          "type": "logo",
+          "ref": "indien"
+        },
+        {
+          "type": "text",
+          "text": "Benjamin Lacroix"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Ceux et celles sans qui rien ne serait possible",
+      "elements": [
+        {
+          "type": "logo",
+          "ref": "pompom"
+        },
+        {
+          "type": "logo",
+          "ref": "pompom"
+        },
+        {
+          "type": "logo",
+          "ref": "pompom"
+        },
+        {
+          "type": "text",
+          "text": "Christophe Heubès"
+        },
+        {
+          "type": "text",
+          "text": "Anne Beauchart"
+        },
+        {
+          "type": "text",
+          "text": "Marina Tracco"
+        }
+      ]
+    }
+  ]
+}

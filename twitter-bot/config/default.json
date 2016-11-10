@@ -1,0 +1,61 @@
+{
+  "logger": {
+    "threshold": "warn",
+    "console": {
+      "level": "warn"
+    }
+  },
+  "twitterBot": {
+    "sender": "XebiconTest",
+    "consumerKey": "xx",
+    "consumerSecret": "xx",
+    "accessToken": "xx",
+    "accessTokenSecret": "xx",
+    "vote": {
+      "hashtags": [
+        "xebiafr #vialyon",
+        "xebicon #vialyon",
+        "xebiconfr #vialyon",
+        "xebiafr #viabordeaux",
+        "xebicon #viabordeaux",
+        "xebiconfr #viabordeaux"
+      ],
+      "train1Name": "viaBordeaux",
+      "train2Name": "viaLyon"
+    },
+    "timeline": {
+      "hashtags": [
+        "#xebiafr", "@xebiafr", "@xebicon", "#xebicon", "@xebiconfr", "#xebiconfr"
+      ]
+    }
+  },
+  "rabbitMQ": {
+    "host": "host",
+    "user": "user",
+    "password": "password",
+    "queue": "twitter_consumer",
+    "exchangeConsumer": "xebiconExchange",
+    "exchangeProducer": "xebiconExchange"
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": "6379",
+    "prefix": "twitter"
+  },
+  "twitterLogoUrl": "http://vignette3.wikia.nocookie.net/logopedia/images/6/6b/2000px-Twitter_2012_logo.svg.png/revision/latest/scale-to-width-down/296?cb=20120608112551",
+  "twitter": {
+    "replies": {
+      "VOTE": "Ok, bien reçu. Bon voyage.",
+      "VOTE_DONE": "Vous avez déjà choisi votre escale.",
+      "TRAIN_DEPARTURE_START": "Départ imminent ! Veuillez garder bras et jambes à l'intérieur du wagon.",
+      "TRAIN_DEPARTURE_END": "Bienvenue en gare !",
+      "HOT_DEPLOYMENT_START": "Anomalie logicielle sur les lampadaires, procédure de récupération.",
+      "HOT_DEPLOYMENT_END": "Incidents résolus. Préparez-vous au départ.",
+      "AVAILABILITY_START": "Dégustation ouverte, goûtez nos grands crus classés. L'abus d'alcool est dangereux.",
+      "AVAILABILITY_END": "La dégustation est terminée, préparez-vous au départ.",
+      "TRAIN_POSITION_HOT_DEPLOY": "Bienvenue à Lyon, ville des lumières...",
+      "TRAIN_POSITION_AVAILABILITY": "Bienvenue à Bordeaux, capitale mondiale du vin...",
+      "TRAIN_POSITION_XEBICON": "Bienvenue à la XebiCon. Merci d'avoir voyagé avec la compagnie XebiCon Train."
+    }
+  }
+}

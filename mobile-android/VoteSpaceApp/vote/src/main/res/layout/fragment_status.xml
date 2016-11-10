@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/status_message_padding"
+            android:textColor="@color/promptGray"
+            android:textSize="@dimen/prompt_medium"
+            tools:text="En route pour la"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <FrameLayout
+            android:id="@+id/departure_image_container"
+            android:layout_width="@dimen/status_image_container_size"
+            android:layout_height="@dimen/status_image_container_size"
+            android:layout_centerInParent="true"
+            tools:background="@drawable/round_shape_bdx_big">
+
+            <ImageView
+                android:id="@+id/departure_image"
+                android:layout_width="@dimen/status_train_width"
+                android:layout_height="@dimen/status_train_height"
+                android:layout_gravity="center"
+                android:contentDescription="@string/train_for_bdx"
+                android:duplicateParentState="true"
+                android:src="@drawable/train"/>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/hashtag_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/prompt_big"
+        tools:background="@color/colorBdx"
+        tools:text="#ViaBdx"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

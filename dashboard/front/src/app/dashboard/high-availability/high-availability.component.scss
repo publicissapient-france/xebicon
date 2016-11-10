@@ -1,0 +1,25 @@
+@import "../../variables.style";
+
+:host {
+  display: block;
+}
+
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+clusters {
+  width: 520px;
+  height: 400px;
+}
+
+shop-bill {
+  width: 65%;
+  min-width: 1120px;
+}
+
+station-message {
+  margin-bottom: 80px;
+}

@@ -1,0 +1,43 @@
+div {
+  $vote-frequency-item-radius: 110px;
+  display: inline-block;
+  width: $vote-frequency-item-radius;
+  height: $vote-frequency-item-radius;
+  border-radius: 1000px;
+
+  overflow: hidden;
+  box-sizing: border-box;
+
+  &.SMS {
+    background: rgb(245, 126, 0) url(../../../../assets/svg/sms.svg) no-repeat center;
+    background-size: 54% 54%;
+  }
+  &.IOS {
+    background: #b2b2b2 url(../../../../assets/svg/ios.svg) no-repeat center;
+    background-size: 64% 64%;
+  }
+  &.ANDROID {
+    background: #a4c639 url(../../../../assets/svg/android.svg) no-repeat center;
+    background-size: 64% 64%;
+  }
+  &.TWITTER {
+    background: #3aaae1 url(../../../../assets/svg/twitter.svg) no-repeat center;
+    background-size: 54% 54%;
+  }
+  &.FB {
+    background: rgb(59, 89, 159) url(../../../../assets/svg/facebook.svg) no-repeat center;
+    background-size: 70% 70%;
+  }
+
+  opacity: 0;
+  transition: opacity 1s;
+  &.splash-true {
+    transition: opacity .1s;
+    opacity: 1;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

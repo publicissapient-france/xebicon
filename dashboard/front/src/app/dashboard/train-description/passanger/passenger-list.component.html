@@ -1,0 +1,7 @@
+<div class="passenger-list-container">
+  <div class="passenger-row" *ngFor="let passengerRow of passengers; let indexRow = index;">
+    <div class="passenger-item-container" *ngFor="let passengerItem of passengerRow; let indexItem = index;">
+      <passenger-item [passenger]="passengerItem" [passengerId]="indexRow + '-' + indexItem" (passengerGone)="onPassengerGone($event)"></passenger-item>
+    </div>
+  </div>
+</div>
